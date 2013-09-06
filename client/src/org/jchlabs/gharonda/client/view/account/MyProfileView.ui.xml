@@ -1,0 +1,232 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<ui:with type="com.Gharonda.client.NameTokens" field="nameTokens"></ui:with>
+	<g:HTMLPanel ui:field="contentPanel">
+		<div class="myaccount">
+			<div id="tab_inner">
+				<g:Anchor ui:field="myProfile" styleName="select_tab1">
+					<span>
+						<ui:msg key="myProfile">My Profile</ui:msg>
+					</span>
+				</g:Anchor>
+				<g:Hyperlink ui:field="myListings"
+					targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyListingsPage}">
+					<span>
+						<ui:msg key="myListings">My Listings</ui:msg>
+					</span>
+				</g:Hyperlink>
+				<g:Hyperlink ui:field="myFavorites"
+					targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyFavoritesPage}">
+					<span>
+						<ui:msg key="myFavorites">My Favorites</ui:msg>
+					</span>
+				</g:Hyperlink>
+				<g:Hyperlink ui:field="myNotifierProfile"
+					targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyNotifierProfilePage}">
+					<span>
+						<ui:msg key="myNotifierProfile">My Notifier Profile</ui:msg>
+					</span>
+				</g:Hyperlink>
+			</div>
+			<div class="clear" />
+			<div>
+				<img width="942" height="8" src="images/top5.gif" />
+			</div>
+		</div>
+		<div class="clear" />
+		<div class="my_account_update">
+			<h3>
+				<ui:msg key="editMyProfile">Edit My Profile</ui:msg>
+			</h3>
+			<ol>
+				<li>
+					<label>
+						<ui:msg key="firstName">First Name</ui:msg>
+					</label>
+					<g:TextBox ui:field="firstName" />
+				</li>
+				<li>
+					<label>
+						<ui:msg key="lastName">Last Name</ui:msg>
+					</label>
+					<g:TextBox ui:field="lastName" />
+				</li>
+				<li>
+					<label>
+						<ui:msg key="Phone">Phone</ui:msg>
+					</label>
+					<strong> +90</strong>
+					<g:TextBox ui:field="phone_area" styleName="yellow_textfield1_area" />
+					<g:TextBox ui:field="phone" styleName="yellow_textfield1_phone" />
+				</li>
+				<li>
+					<label>
+						<ui:msg key="cell">Cell</ui:msg>
+					</label>
+					<strong> +90</strong>
+					<g:TextBox ui:field="cell_area" styleName="yellow_textfield1_area" />
+					<g:TextBox ui:field="cell" styleName="yellow_textfield1_phone" />
+				</li>
+				<li style="margin: 10px -295px;width:px;">
+					<g:CheckBox ui:field="signUpForServiceProvider"
+						styleName="signUp_cb" />
+					<label class="checkbox_label">
+						<ui:msg key="signUp">Add me to Service Providers</ui:msg>
+					</label>
+				</li>
+			</ol>
+			<g:HTMLPanel ui:field="serviceProviderInfoPanel">
+				<ol>
+					<li>
+						<label>
+							<ui:msg key="companyName">Company Name</ui:msg>
+						</label>
+						<g:TextBox ui:field="companyName" />
+					</li>
+					<li>
+						<label>Address 1</label>
+						<g:TextBox ui:field="address1" />
+					</li>
+					<li>
+						<label>Address 2</label>
+						<g:TextBox ui:field="address2" />
+					</li>
+					<li>
+						<label class="suburb_city">
+							<ui:msg key="suburb">Suburb</ui:msg>
+						</label>
+						<g:TextBox ui:field="suburb" />
+					</li>
+					<li>
+						<label class="suburb_city">
+							<ui:msg key="city">City</ui:msg>
+						</label>
+						<g:TextBox ui:field="city" />
+					</li>
+					<li>
+						<label class="suburb_city">
+							<ui:msg key="state">State</ui:msg>
+						</label>
+						<g:TextBox ui:field="state" />
+					</li>
+					<li>
+						<label>
+							<ui:msg key="zipCode">Zip Code</ui:msg>
+						</label>
+						<g:TextBox ui:field="zipCode" />
+					</li>
+					<li>
+						<label>
+							<ui:msg key="businessType">Business Type</ui:msg>
+						</label>
+						<g:ListBox ui:field="businessType" />
+					</li>
+					<li>
+						<label>
+							<ui:msg key="webSite">Web Site</ui:msg>
+						</label>
+						<g:TextBox ui:field="webSite" />
+					</li>
+				</ol>
+			</g:HTMLPanel>
+			<ol>
+				<li>
+					<g:Image ui:field="profileUpdate" styleName="update_btn"
+						url="images/update.gif">
+					</g:Image>
+				</li>
+			</ol>
+		</div>
+		<table width="940" cellspacing="0" cellpadding="0" border="0"
+			class="border_btm">
+			<tbody>
+				<tr>
+					<td width="7" valign="top" height="24" align="left">
+						<img width="7" height="24" border="0" alt=""
+							src="images/graybox_left.gif" />
+					</td>
+					<td valign="top" align="left" class="bg_graybox">
+						<h1>
+							<ui:msg key="changePassword">Change Password</ui:msg>
+						</h1>
+					</td>
+					<td width="7" valign="top" height="24" align="right">
+						<img width="7" height="24" border="0" alt=""
+							src="images/graybox_right.gif" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="my_account_update">
+			<ol>
+				<li>
+					<label>
+						<ui:msg key="oldPassword">Old Password</ui:msg>
+					</label>
+					<g:PasswordTextBox ui:field="oldPasswd" />
+				</li>
+				<li>
+					<label>
+						<ui:msg key="newPassword">New Password</ui:msg>
+					</label>
+					<g:PasswordTextBox ui:field="passwd" />
+				</li>
+				<li>
+					<label>
+						<ui:msg key="confirmPassword">Confirm Password</ui:msg>
+					</label>
+					<g:PasswordTextBox ui:field="confirmPassWd" />
+				</li>
+				<li>
+					<g:Image ui:field="passwdUpdate" styleName="update_btn"
+						url="images/update.gif">
+					</g:Image>
+				</li>
+			</ol>
+		</div>
+		<table width="940" cellspacing="0" cellpadding="0" border="0"
+			class="border_btm">
+			<tbody>
+				<tr>
+					<td width="7" valign="top" height="24" align="left">
+						<img width="7" height="24" border="0" alt=""
+							src="images/graybox_left.gif" />
+					</td>
+					<td valign="top" align="left" class="bg_graybox">
+						<h1>
+							<ui:msg key="emailChange">Email Address Change</ui:msg>
+						</h1>
+					</td>
+					<td width="7" valign="top" height="24" align="right">
+						<img width="7" height="24" border="0" alt=""
+							src="images/graybox_right.gif" />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div style="margin-bottom: 0pt;" class="my_account_update">
+			<ol>
+				<li>
+					<label>
+						<ui:msg key="emailAddress">eMail Address</ui:msg>
+					</label>
+					<g:TextBox ui:field="email" />
+				</li>
+				<li>
+					<label>
+						<ui:msg key="emailConfirm">Confirm eMail Address</ui:msg>
+					</label>
+					<g:TextBox ui:field="confirmEmail" />
+				</li>
+				<li>
+					<g:Image ui:field="emailUpdate" styleName="update_btn"
+						url="images/update.gif">
+					</g:Image>
+				</li>
+			</ol>
+		</div>
+		<div class="clear" />
+	</g:HTMLPanel>
+</ui:UiBinder>

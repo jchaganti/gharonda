@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.sahibidenev.domain.model">
+	<class
+		name="Serviceproviderdetails"
+		table="serviceproviderdetails"
+	>
+		<meta attribute="sync-DAO">true</meta>
+
+		<id
+			name="Id"
+			type="integer"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="BusinessType"
+			column="businessType"
+			type="integer"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="CompanyName"
+			column="company_name"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="AddrLine1"
+			column="addr_line1"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+		<property
+			name="AddrLine2"
+			column="addr_line2"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+		<property
+			name="City"
+			column="city"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+		<property
+			name="Zip"
+			column="zip"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Website"
+			column="website"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+		<property
+			name="Suburb"
+			column="suburb"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+		<property
+			name="State"
+			column="state"
+			type="string"
+			not-null="false"
+			length="200"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

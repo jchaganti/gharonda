@@ -1,0 +1,346 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<ui:with type="com.Gharonda.client.NameTokens" field="nameTokens"></ui:with>
+	<g:HTMLPanel ui:field="contentPanel">
+		<div class="leftcol_aboutus">
+			<div id="tab_inner">
+				<g:Anchor ui:field="details">
+					<span>
+						<ui:msg key="details">Details</ui:msg>
+					</span>
+				</g:Anchor>
+				<g:Anchor ui:field="showOnMap" styleName="select_tab1" >
+					<span>
+						<ui:msg key="showOnMap">Show on Map</ui:msg>
+					</span>
+				</g:Anchor>
+				<g:Anchor ui:field="mortgage">
+					<span>
+						<ui:msg key="mortgage">Mortgage</ui:msg>
+					</span>
+				</g:Anchor>
+			</div>
+			<div class="clear" />
+			<div>
+				<img width="753" height="8" src="images/top6.gif" />
+			</div>
+			<div class="propertydetail_inner" style="padding-bottom: 10px;">
+				<div>
+					<h1>
+						<g:HTML ui:field="topDesc" />
+					</h1>
+				</div>
+				<g:HTMLPanel ui:field="mapPanel" height="400" width="390"
+					styleName="innerleft_property2">
+				</g:HTMLPanel>
+				<div class="innerright_property">
+					<div class="rightproperty_container">
+						<table width="294" cellspacing="0" cellpadding="0" border="0">
+							<tbody>
+								<tr>
+									<td width="7" valign="top" height="24" align="left">
+										<img width="7" height="24" border="0" alt=""
+											src="images/graybox_left.gif" />
+									</td>
+									<td valign="top" align="left" class="bg_graybox">
+										<h1>
+											<ui:msg key="propertyDesc">
+												Property
+												<span> Description</span>
+											</ui:msg>
+										</h1>
+									</td>
+									<td width="7" valign="top" height="24" align="right">
+										<img width="7" height="24" border="0" alt=""
+											src="images/graybox_right.gif" />
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="inner1right_property">
+							<span class="black_txt7">
+								<g:HTML ui:field="pid" />
+							</span>
+							<span class="dark_red_txt_price">
+								<g:HTML ui:field="price" />
+							</span>
+							<span style="font-weight:bold">
+								<g:HTML ui:field="rooms" />
+								<g:HTML ui:field="address1" />
+								<g:HTML ui:field="address2" />
+							</span>
+							<span class="seperator2" />
+							<table width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="listingDate">Listing Date</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="created" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="updatedDate">Updated Date</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="modified" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="pricePerSft">Price per m2</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="priceperSft" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="floor">Floor</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="floor" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="heat">Heat</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="heat" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="view">View</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="view" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="yearBuilt">Year Built</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="buildDate" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="homeLoan">Home Loan</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="homeLoan" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+					<div class="rightproperty_container">
+						<table width="294" cellspacing="0" cellpadding="0" border="0">
+							<tbody>
+								<tr>
+									<td width="7" valign="top" height="24" align="left">
+										<img width="7" height="24" border="0" alt=""
+											src="images/graybox_left.gif" />
+									</td>
+									<td valign="top" align="left" class="bg_graybox">
+										<h1>
+											<ui:msg key="contactInfo">
+												Contact
+												<span> Info</span>
+											</ui:msg>
+										</h1>
+									</td>
+									<td width="7" valign="top" height="24" align="right">
+										<img width="7" height="24" border="0" alt=""
+											src="images/graybox_right.gif" />
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="inner1right_property">
+							<table width="100%" cellspacing="0" cellpadding="0" border="0">
+								<tbody>
+									<tr>
+										<td valign="middle" align="left" style="width: 119px;">
+											<span style="font-weight:bold">
+												<ui:msg key="name">Name:</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="name" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="phone">Phone:</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="phone" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="cell">Cell:</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="cell" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="left">
+											<span style="font-weight:bold">
+												<ui:msg key="companyName">Company Name:</ui:msg>
+											</span>
+										</td>
+										<td valign="middle" align="left">
+											<g:HTML ui:field="companyName" />
+										</td>
+									</tr>
+									<tr>
+										<td valign="middle" align="middle" colspan="2" style="padding:10px 0px 0px 50px">
+											<img src="images/btn_sendmessage_tr.gif" border="0" />
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<div class="innerleft_property2">
+					<table width="60%" cellspacing="0" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<td valign="middle" align="left" nowrap="">
+									<g:CheckBox ui:field="cb1" />
+									<span class="green_txt_neighbor">
+										<ui:msg key="shopping">Alışveriş</ui:msg>
+									</span>
+								</td>
+								<td valign="middle" align="left" nowrap="">
+									<g:CheckBox ui:field="cb2" />
+									<span class="green_txt_neighbor">
+										<ui:msg key="school">Okul</ui:msg>
+									</span>
+								</td>
+								<td valign="middle" align="left" nowrap="">
+									<g:CheckBox ui:field="cb3" />
+									<span class="green_txt_neighbor">
+										<ui:msg key="hospital">Hastane</ui:msg>
+									</span>
+								</td>
+								<td valign="middle" align="left" nowrap="">
+									<g:CheckBox ui:field="cb4" />
+									<span class="green_txt_neighbor">
+										<ui:msg key="pharmacy">Eczane</ui:msg>
+									</span>
+								</td>
+							</tr>
+							<tr>
+								<td valign="middle" align="left" nowrap="">
+									<g:CheckBox ui:field="cb5" />
+									<span class="green_txt_neighbor">
+										<ui:msg key="cafe">Kafe</ui:msg>
+									</span>
+								</td>
+								<td valign="middle" align="left" nowrap="">
+									<g:CheckBox ui:field="cb6" />
+									<span class="green_txt_neighbor">
+										<ui:msg key="restaurant">Restoran</ui:msg>
+									</span>
+								</td>
+								<td valign="middle" align="left" nowrap="">
+									<g:CheckBox ui:field="cb7" />
+									<span class="green_txt_neighbor">
+										<ui:msg key="bank">Banka ATM</ui:msg>
+									</span>
+								</td>
+								<td valign="middle" align="left" nowrap="">
+									<g:CheckBox ui:field="cb8" />
+									<span class="green_txt_neighbor">
+										<ui:msg key="gas">Benzin İstasyonu</ui:msg>
+									</span>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="clear" />
+			</div>
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody>
+					<tr>
+						<td valign="middle" height="40" align="center">
+							<input type="image" value="" src="images/btn_email.gif" />
+						</td>
+						<td valign="middle" align="center">
+							<g:Image ui:field="addToFav" url="images/btn_favourties.gif" />
+						</td>
+						<td valign="middle" align="center">
+							<input type="image" value="" src="images/btn_loan.gif" />
+						</td>
+						<td valign="middle" align="center">
+							<g:Image ui:field="appraisal" url="images/btn_property.gif" />
+						</td>
+						<td valign="middle" align="center">
+							<input type="image" value="" src="images/btn_print.gif" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rightcol_aboutus">
+			<div class="featured1">
+				<table width="177" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td width="7" valign="top" height="24" align="left">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_left.gif" />
+							</td>
+							<td valign="top" align="left" class="bg_graybox">
+								<h1>
+									<ui:msg key="featured">Featured Listing</ui:msg>
+								</h1>
+							</td>
+							<td width="7" valign="top" height="24" align="right">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_right.gif" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<g:HTMLPanel ui:field="featuredListing">
+				</g:HTMLPanel>
+			</div>
+		</div>
+		<div class="clear" />
+	</g:HTMLPanel>
+</ui:UiBinder>

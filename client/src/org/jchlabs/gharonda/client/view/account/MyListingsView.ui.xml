@@ -1,0 +1,61 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<ui:with type="com.Gharonda.client.NameTokens" field="nameTokens"></ui:with>
+	<g:HTMLPanel ui:field="contentPanel">
+		<div class="myaccount">
+			<div id="tab_inner">
+				<g:Hyperlink ui:field="myProfile" targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyProfilePage}">
+					<span><ui:msg key="myProfile">My Profile</ui:msg></span>
+				</g:Hyperlink>
+				<g:Anchor ui:field="myListings" styleName="select_tab1">
+					<span><ui:msg key="myListings">My Listings</ui:msg></span>
+				</g:Anchor>
+				<g:Hyperlink ui:field="myFavorites" targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyFavoritesPage}">
+					<span><ui:msg key="myFavorites">My Favorites</ui:msg></span>
+				</g:Hyperlink>
+				<g:Hyperlink ui:field="myNotifierProfile" targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyNotifierProfilePage}">
+					<span><ui:msg key="myNotifierProfile">My Notifier Profile</ui:msg></span>
+				</g:Hyperlink>
+			</div>
+			<div class="clear" />
+			<div>
+				<img width="942" height="8" src="images/top5.gif" />
+			</div>
+		</div>
+		<div class="clear" />
+		<div class="myaccountlisting_inner">
+			<table width="55%" cellspacing="0" cellpadding="0" border="0">
+				<tbody>
+					<tr>
+						<td width="3%" valign="middle" align="left"> </td>
+						<td valign="middle" align="left">
+							<g:Anchor ui:field="refresh">
+								<input type="image" value="" src="images/btn_refresh.gif" />
+							</g:Anchor>
+							
+						</td>
+						<td  valign="middle" align="left">
+							<g:Anchor ui:field="submitAd">
+								<input type="image" value="" src="images/btn_submit_ad.gif" />
+							</g:Anchor>
+						</td>
+						<td valign="middle" align="left">
+							<g:Anchor ui:field="activateAd">
+								<input type="image" value="" src="images/btn_active_ad.gif" />
+							</g:Anchor>
+						</td>
+						<td valign="middle" align="left">
+							<g:Anchor ui:field="deactivateAd">
+								<input type="image" value="" src="images/btn_inactive_ad.gif" />
+							</g:Anchor>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<g:HTMLPanel ui:field="propertiesGridPanel">
+			</g:HTMLPanel>
+		</div>
+	</g:HTMLPanel>
+</ui:UiBinder>

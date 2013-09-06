@@ -1,0 +1,171 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<ui:with type="com.Gharonda.client.NameTokens" field="nameTokens"></ui:with>
+	<g:HTMLPanel ui:field="contentPanel">
+		<div class="leftcol_aboutus">
+			<div id="tab_inner">
+				<g:Anchor ui:field="details">
+					<span>
+						<ui:msg key="details">Details</ui:msg>
+					</span>
+				</g:Anchor>
+				<g:Anchor ui:field="showOnMap">
+					<span>
+						<ui:msg key="showOnMap">Show on Map</ui:msg>
+					</span>
+				</g:Anchor>
+				<g:Anchor ui:field="mortgage" styleName="select_tab1">
+					<span>
+						<ui:msg key="mortgage">Mortgage</ui:msg>
+					</span>
+				</g:Anchor>
+			</div>
+			<div class="clear" />
+			<div>
+				<img width="753" height="8" src="images/top6.gif" />
+			</div>
+			<div class="propertydetail_inner" style="padding-bottom: 10px;">
+				<div class="leftcol_mortgage">
+					<img src="articles/Mortgage_bnr_317x145.jpg" width="317"
+						height="145" />
+					<h1>
+						<font face="Tahoma" color="#193f4a" size="4">Ev Kredisi mi
+							Arıyorsunuz?</font>
+					</h1>
+					<p>
+						<font face="Tahoma" color="#193f4a" size="2">İnsanoğlunun
+							hayatı boyunca yapabileceği en büyük yatırımlardan birisi ev
+							almaktır. O yüzden araştırmanızı çok iyi yapmak zorundasınız. Ev
+							Kredisi faiz oranlarındaki küçük bir indirim sizlere binlerce TL
+							kazanç sağlayabilir. Anlaşmalı olduğumuz bankalar ile kredi
+							başvurusu yapmak artık daha da kolay.</font>
+					</p>
+					<ul>
+						<li>
+							<font face="Tahoma" color="#193f4a" size="2">Mortgage
+								Nedir?</font>
+						</li>
+						<li>
+							<font face="Tahoma" color="#193f4a" size="2">Mortgage
+								Senedi Nasıl Oluşuyor. Part-I</font>
+						</li>
+						<li>
+							<font face="Tahoma" color="#193f4a" size="2">Faiz Oranınıza
+								Etkisi Olan Ana Faktörler</font>
+						</li>
+						<li>
+							<font face="Tahoma" color="#193f4a" size="2">Ekonomik
+								Şartlar Ve Faiz Oranları</font>
+						</li>
+						<li>
+							<font face="Tahoma" color="#193f4a" size="2">Ekonomik
+								Verilerin Faiz Oranlarına Etkisi</font>
+						</li>
+						<li>
+							<font face="Tahoma" color="#193f4a" size="2">Kredi Yenileme
+							</font>
+						</li>
+						<li>
+							<font face="Tahoma" color="#193f4a" size="2">Mortgage
+								Sigortası</font>
+						</li>
+					</ul>
+				</div>
+				<div class="rightcol_mortgage">
+					<span class="sponser_txt">
+						<font face="Tahoma" color="#193f4a" size="1">Sponsor
+							Garanti Bankası</font>
+					</span>
+					<table width="379" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>
+								<div class="rightmortgage_container">
+									<img src="articles/mortgage1.jpg" width="376" height="220" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<table width="379" border="0" cellspacing="0" cellpadding="0">
+									<tr>
+										<td align="left" valign="top" width="7" height="24">
+											<img src="images/graybox_left.gif" alt="" width="7"
+												height="24" border="0" />
+										</td>
+										<td align="left" valign="top" class="bg_graybox">
+											<h1 class="heading_calcu">
+												<font face="Tahoma" color="#193f4a" size="3">Ev Kredisi
+													Hesap Makinaları</font>
+											</h1>
+										</td>
+										<td align="right" valign="top" width="7" height="24">
+											<img src="images/graybox_right.gif" alt="" width="7"
+												height="24" border="0" />
+										</td>
+									</tr>
+								</table>
+								<div class="rightmortgagecalc_inner">
+									<ul>
+										<li>
+											<font face="Tahoma" color="#193f4a" size="2">Mortgage
+												Ödemesi - Grafik</font>
+										</li>
+										<span class="seperator4"></span>
+										<li>
+											<font face="Tahoma" color="#193f4a" size="2">Aylık
+												Mortgage Ödeme Hesaplaması</font>
+										</li>
+										<span class="seperator4"></span>
+										<li>
+											<font face="Tahoma" color="#193f4a" size="2">Aylık
+												Gelirim Ne Kadar Olmalı?</font>
+										</li>
+										<span class="seperator4"></span>
+										<li>
+											<font face="Tahoma" color="#193f4a" size="2">Ne Kadar
+												Kredi Alabilirim?</font>
+										</li>
+										<span class="seperator4"></span>
+										<li>
+											<font face="Tahoma" color="#193f4a" size="2">Extra
+												Ödemenin Avantajı</font>
+										</li>
+									</ul>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="clear" />
+			</div>
+		</div>
+		<div class="rightcol_aboutus">
+			<div class="featured1">
+				<table width="177" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td width="7" valign="top" height="24" align="left">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_left.gif" />
+							</td>
+							<td valign="top" align="left" class="bg_graybox">
+								<h1>
+									<ui:msg key="featured">Featured Listing</ui:msg>
+								</h1>
+							</td>
+							<td width="7" valign="top" height="24" align="right">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_right.gif" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<g:HTMLPanel ui:field="featuredListing">
+				</g:HTMLPanel>
+			</div>
+		</div>
+		<div class="clear" />
+	</g:HTMLPanel>
+</ui:UiBinder>

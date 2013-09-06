@@ -1,0 +1,154 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<g:HTMLPanel ui:field="contentPanel">
+		<div class="leftcol_aboutus">
+			<div class="innercontent_compare">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td valign="top" align="left">
+								<table width="100%" cellspacing="10" cellpadding="0"
+									border="0">
+									<tbody>
+										<tr>
+											<td valign="top" align="left">
+												<g:Image ui:field="compare" url="images/btn_compare.gif" />
+											</td>
+											<td width="10" valign="top" align="right">
+												<div class="cmp_btn" style="padding-left:488px">
+													<g:Image ui:field="showMap" url="images/btn_searchonmap.gif" />
+												</div>
+											</td>
+											<td valign="top" align="right">
+												<div id="pagination">
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td valign="top" align="left">
+								<div class="leftcol_aboutus">
+									<table width="753" cellspacing="0" cellpadding="0"
+										border="0">
+										<tbody>
+											<tr>
+												<td width="7" valign="top" height="24" align="left">
+													<img width="7" height="24" border="0" alt=""
+														src="images/graybox_left.gif" />
+												</td>
+												<td width="729" valign="top" align="left" class="bg_graybox">
+													<h1>
+														<span id="searchHeader">
+														</span>
+													</h1>
+												</td>
+												<td width="729" valign="top" align="right" class="bg_graybox">
+													<g:ListBox ui:field="sortTypesList" styleName="text_field15" />
+												</td>
+												<td width="7" valign="top" height="24" align="right">
+													<img width="7" height="24" border="0" alt=""
+														src="images/graybox_right.gif" />
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<div class="gray_bg1">
+										<table width="100%" cellspacing="0" cellpadding="0"
+											border="0">
+											<tbody>
+												<tr>
+													<td width="96%" valign="middle" align="left">
+														<table>
+															<tr>
+																<td>
+																	<g:TextBox ui:field="state" styleName="text_field14" />
+																	<g:HTMLPanel ui:field="statePanel" />
+																</td>
+																<td>
+																	<g:TextBox ui:field="city" styleName="text_field14" />
+																	<g:HTMLPanel ui:field="cityPanel" />
+																</td>
+																<td>
+																	<g:TextBox ui:field="suburb" styleName="text_field15" />
+																	<g:HTMLPanel ui:field="suburbPanel" />
+																</td>
+																<td>
+																	<g:ListBox ui:field="pTypesList" styleName="text_field14" />
+																</td>
+																<td>
+																	<g:ListBox ui:field="priceTypesList"
+																		styleName="text_field14" />
+																</td>
+																<td>
+																	<g:ListBox ui:field="bedRoomsList" styleName="text_field16" />
+																</td>
+															</tr>
+														</table>
+													</td>
+													<td width="4%" valign="top" align="left">
+														<g:Anchor ui:field="search">
+															<img width="21" height="20" border="0" alt=""
+																src="images/bullet5.gif" />
+														</g:Anchor>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+									<g:HTMLPanel ui:field="propertiesGridPanel"
+										styleName="innercontent_homeforsale">
+									</g:HTMLPanel>
+									<table width="100%" cellspacing="0" cellpadding="0"
+										border="0" style="margin-top:15px">
+										<tbody>
+											<tr>
+												<td valign="middle" align="left">
+													<g:Image ui:field="compareBtm" url="images/btn_compare.gif" />
+												</td>
+												<td valign="middle" align="right">
+													<g:HTMLPanel ui:field="paging">
+													</g:HTMLPanel>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="rightcol_aboutus">
+			<div class="featured1">
+				<table width="177" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td width="7" valign="top" height="24" align="left">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_left.gif" />
+							</td>
+							<td valign="top" align="left" class="bg_graybox">
+								<h1>
+									<ui:msg key="featured">Featured Listing</ui:msg>
+								</h1>
+							</td>
+							<td width="7" valign="top" height="24" align="right">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_right.gif" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<g:HTMLPanel ui:field="featuredListing">
+				</g:HTMLPanel>
+			</div>
+		</div>
+		<div class="clear" />
+	</g:HTMLPanel>
+</ui:UiBinder>

@@ -1,0 +1,244 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<g:PopupPanel ui:field="loginDialog">
+		<g:HTMLPanel>
+			<div class="register_container">
+				<div id="tab_inner1">
+					<g:Anchor ui:field="login">
+						<span>
+							<ui:msg key="login">Login</ui:msg>
+						</span>
+					</g:Anchor>
+					<g:Anchor ui:field="register" styleName="select_tab2">
+						<span>
+							<ui:msg key="register">Register</ui:msg>
+						</span>
+					</g:Anchor>
+				</div>
+				<table width="549" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td align="left" valign="top" width="7" height="33">
+							<img src="images/graybox_left1.gif" alt="" width="11" height="33"
+								border="0" />
+						</td>
+						<td align="right" valign="middle" class="bg_graybox1">
+							<span class="black_link">
+								<ui:msg key="alreadyAccount">Already have an account ?</ui:msg>
+							</span>
+						</td>
+						<td align="right" valign="top" width="7" height="33">
+							<img src="images/graybox_right1.gif" alt="" width="9" height="33"
+								border="0" />
+						</td>
+					</tr>
+				</table>
+				<div class="register1_inner">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td width="47%" align="left" valign="top">
+								<ol>
+									<li>
+										<label>
+											<ui:msg key="firstName">First Name</ui:msg>
+											<span class="staric">*</span>
+										</label>
+										<g:TextBox ui:field="firstName" styleName="yellow_textfield1" />
+									</li>
+									<li>
+										<label>
+											Email
+											<span class="staric">*</span>
+										</label>
+										<g:TextBox ui:field="email" styleName="yellow_textfield1" />
+									</li>
+									<li>
+										<label>
+											<ui:msg key="password">Password</ui:msg>
+											<span class="staric">*</span>
+										</label>
+										<g:PasswordTextBox ui:field="passwd"
+											styleName="yellow_textfield1" />
+									</li>
+									<li>
+										<label>
+											<ui:msg key="phone">Phone</ui:msg>
+											<span class="staric">*</span>
+										</label>
+										<strong> +90</strong>
+	<g:TextBox ui:field="phone_area" styleName="yellow_textfield1_area" />
+	<g:TextBox ui:field="phone" styleName="yellow_textfield1_phone" />
+									</li>
+								</ol>
+							</td>
+							<td width="53%" align="left" valign="top">
+								<ol>
+									<li>
+										<label>
+											<ui:msg key="lastName">Last Name</ui:msg>
+											<span class="staric">*</span>
+										</label>
+										<g:TextBox ui:field="lastName" styleName="yellow_textfield1" />
+									</li>
+									<li>
+										<label>
+											<ui:msg key="confirm">Confirm</ui:msg>
+											<span class="staric">*</span>
+										</label>
+										<g:TextBox ui:field="confirmEmail" styleName="yellow_textfield1" />
+									</li>
+									<li>
+										<label>
+											<ui:msg key="confirmPassword">Confirm Password</ui:msg>
+											<span class="staric">*</span>
+										</label>
+										<g:PasswordTextBox ui:field="confirmPassWd"
+											styleName="yellow_textfield1" />
+									</li>
+									<li>
+										<label>
+											<ui:msg key="cell">Cell</ui:msg>
+											<span class="staric">*</span>
+										</label>
+										<strong>
+										+90
+										</strong>
+										<g:TextBox ui:field="cell_area" stylePrimaryName="yellow_textfield1_area" />
+										<g:TextBox ui:field="cell" stylePrimaryName="yellow_textfield1_phone" />
+										
+									</li>
+								</ol>
+							</td>
+						</tr>
+					</table>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td align="left" valign="middle" width="20"></td>
+							<td align="left" valign="middle" style="padding:5px">
+								<g:CheckBox ui:field="signUpForServiceProvider" />
+								<strong>
+									<ui:msg key="signUp">Add me to Service Providers</ui:msg>
+								</strong>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" valign="middle" width="20"></td>
+							<td align="left" valign="middle" style="padding:5px">
+								<g:CheckBox ui:field="agreement" />
+								<span class="green_txt">
+									<strong>
+										<ui:msg key="agreement">I agree to the Site Terms</ui:msg>
+									</strong>
+								</span>
+							</td>
+						</tr>
+					</table>
+					<br />
+					<g:HTMLPanel ui:field="serviceProviderInfoPanel">
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+								<td width="47%" align="left" valign="top">
+									<ol>
+										<li>
+											<label>
+												<ui:msg key="companyName">Company Name</ui:msg>
+											</label>
+											<g:TextBox ui:field="companyName" styleName="blue_textfield" />
+										</li>
+										<li>
+											<label>
+												<ui:msg key="address">Address</ui:msg>
+												1
+											</label>
+											<g:TextBox ui:field="address1" styleName="blue_textfield" />
+										</li>
+										<li>
+											<label>
+												<ui:msg key="address">Address</ui:msg>
+												2
+											</label>
+											<g:TextBox ui:field="address2" styleName="blue_textfield" />
+										</li>
+										<li>
+											<label>
+												<ui:msg key="zipCode">Zip Code</ui:msg>
+											</label>
+											<g:TextBox ui:field="zipCode" styleName="blue_textfield" />
+										</li>
+										<li>
+											<label>
+												<ui:msg key="webSite">Web Site</ui:msg>
+											</label>
+											<g:TextBox ui:field="webSite" styleName="blue_textfield" />
+										</li>
+									</ol>
+								</td>
+								<td width="53%" align="left" valign="top">
+									<ol>
+										<li>
+											<label>
+												<ui:msg key="businessType">Business Type</ui:msg>
+											</label>
+											<g:ListBox ui:field="businessType" styleName="blue_textfield" />
+										</li>
+										<li>
+											<label class="suburb_city">
+												<ui:msg key="state">State</ui:msg>
+											</label>
+											<g:TextBox ui:field="state" styleName="blue_textfield" />
+										</li>
+										<li>
+											<label class="suburb_city">
+												<ui:msg key="city">City</ui:msg>
+											</label>
+											<g:TextBox ui:field="city" styleName="blue_textfield" />
+										</li>
+										<li>
+											<label class="suburb_city">
+												<ui:msg key="suburb">Suburb</ui:msg>
+											</label>
+											<g:TextBox ui:field="suburb" styleName="blue_textfield" />
+										</li>
+									</ol>
+								</td>
+							</tr>
+						</table>
+					</g:HTMLPanel>
+					<span class="seperator1"></span>
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td align="left" valign="middle" width="20"></td>
+							<td height="50" align="left" valign="middle"></td>
+							<td align="right" valign="middle">
+								<g:Anchor ui:field="registerMeIn">
+									<img border="0" align="left" alt="" src="images/btn_register.gif" />
+								</g:Anchor>
+							</td>
+							<td align="right" valign="middle" style="padding-right: 25px;">
+								<g:Anchor ui:field="close">
+									<img border="0" align="right" alt="" src="images/btn_cancel.gif" />
+								</g:Anchor>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div id="register_footer">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td align="left" valign="top">
+								<span class="staric">*</span>
+								<ui:msg key="required">Required</ui:msg>
+							</td>
+							<td align="right" valign="top">
+								<g:Anchor ui:field="policy" styleName="blue_link">
+									<ui:msg key="policy">Learn about our Privacy Policy</ui:msg>
+								</g:Anchor>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</g:HTMLPanel>
+	</g:PopupPanel>
+</ui:UiBinder>

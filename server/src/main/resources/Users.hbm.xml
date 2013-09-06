@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="com.sahibidenev.domain.model">
+	<class
+		name="Users"
+		table="users"
+	>
+		<meta attribute="sync-DAO">true</meta>
+		<id
+			name="Id"
+			type="integer"
+			column="id"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="Email"
+			column="email"
+			type="string"
+			not-null="true"
+			length="100"
+		/>
+
+		<property
+			name="Passwd"
+			column="passwd"
+			type="string"
+			not-null="true"
+			length="100"
+		/>
+		<property
+			name="FirstName"
+			column="firstname"
+			type="string"
+			not-null="true"
+			length="100"
+		/>
+		<property
+			name="LastName"
+			column="lastname"
+			type="string"
+			not-null="true"
+			length="100"
+		/>
+		<property
+			name="EmailUpdates"
+			column="emailUpdates"
+			type="integer"
+			not-null="false"
+			length="10"
+		/>
+		<property
+			name="Phone"
+			column="phone"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		<property
+			name="Cell"
+			column="cell"
+			type="string"
+			not-null="false"
+			length="100"
+		/>
+		
+		<many-to-one name="Notifierprofiles"
+			class="Notifierprofiles"
+			column="notifierProfiles_id"
+			unique="true"
+		/>
+		<many-to-one name="Serviceproviderdetails"
+			class="Serviceproviderdetails"
+			column="serviceProviderDetails_id"
+			unique="true"
+		/>
+
+	</class>	
+</hibernate-mapping>

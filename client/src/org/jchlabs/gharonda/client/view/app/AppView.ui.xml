@@ -1,0 +1,269 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<ui:with type="com.Gharonda.client.NameTokens" field="nameTokens"></ui:with>
+	<g:HTMLPanel ui:field="mainContent">
+		<div id="top_menu">
+			<ul>
+				<li>
+					<g:HTML ui:field="welcome"></g:HTML>
+				</li>
+				<li>
+					<g:Anchor ui:field="signIn" styleName="redFont">
+						<span>
+							<ui:msg key="signIn">Sign In</ui:msg>
+						</span>
+					</g:Anchor>
+				</li>
+				<li>
+					<g:Anchor ui:field="signOut" href="#" styleName="redFont">
+						<span>
+							<ui:msg key="signOut">Sign Out</ui:msg>
+						</span>
+					</g:Anchor>
+				</li>
+				<li>
+					<g:Anchor ui:field="register" styleName="redFont">
+						<span>
+							<ui:msg key="register">Register</ui:msg>
+						</span>
+					</g:Anchor>
+				</li>
+				<li>
+					<g:Hyperlink ui:field="faqTop"
+						targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=Services//faq.html;num=20">
+						<span>
+							<ui:msg key="faq">F&amp;Q</ui:msg>
+						</span>	
+					</g:Hyperlink>
+				</li>
+				<li >
+					<g:Anchor ui:field="contactUs">
+						<ui:msg key="contactUs">Contact Us</ui:msg>
+					</g:Anchor>
+				</li>
+				<li class="hide_topslash">
+					<g:Image ui:field="flag" url="images/usa.gif" />
+				</li>
+			</ul>
+		</div>
+		<div class="clear" />
+		<div id="header">
+			<div class="logo">
+				<a href="Gharonda.html">
+					<img border="0" alt="Logo" src="images/logo.gif" />
+				</a>
+			</div>
+			<div class="unlimited">
+				<img width="300" height="60" border="0" alt=""
+					src="images/img_unlimitedlisting.jpg" />
+			</div>
+			<div class="btn_container">
+				<table cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td valign="top" align="right">
+								<div class="btm_btn">
+									<g:Anchor ui:field="registerNow">
+										<span id="myAccount" style="padding-top: 2px;"><ui:msg key="registerNow">Register Now</ui:msg></span>
+									</g:Anchor>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div class="clear" />
+		</div>
+		<div id="nav_bar">
+			<ul>
+				<li class="no_bg">
+					<g:Hyperlink ui:field="home" targetHistoryToken="{nameTokens.getHomePage}"
+						styleName="active">
+						<ui:msg key="home">Home</ui:msg>
+					</g:Hyperlink>
+				</li>
+				<li>
+					<g:Hyperlink ui:field="buy"
+						targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getResultsWOMapPage};mode=1">
+						<ui:msg key="forSale">Buy</ui:msg>
+					</g:Hyperlink>
+				</li>
+				<li>
+					<g:Hyperlink ui:field="rent"
+						targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getResultsWOMapPage};mode=2">
+						<ui:msg key="rent">Rent</ui:msg>
+					</g:Hyperlink>
+				</li>
+				<li>
+					<g:Anchor ui:field="sell">
+						<ui:msg key="sell">Sell</ui:msg>
+					</g:Anchor>
+				</li>
+				<li>
+				<g:MenuBar ui:field="services" styleName="menu_item" height="14px"   animationEnabled="true">
+							<g:MenuItem><ui:msg key="services">Services</ui:msg>
+							<g:MenuBar vertical="true">
+								<g:MenuItem ui:field="mortgageCalcSvcMenu" styleName="menu_item" width="133px" height="14px"> <ui:msg key="mortgageCalculators">Mortgage Calculators</ui:msg>  </g:MenuItem>
+								<g:MenuItem ui:field="mortgageSvcMenu" styleName="menu_item" width="133px" height="14px"> <ui:msg key="mortgage">Mortgage</ui:msg></g:MenuItem>
+								<g:MenuItem ui:field="appraisalSvcMenu" styleName="menu_item" width="133px" height="14px"> <ui:msg key="appraisal">Appraisal</ui:msg>  </g:MenuItem>
+								<g:MenuItem ui:field="insuranceSvcMenu" styleName="menu_item" width="133px" height="14px"> <ui:msg key="insurance">Insurance</ui:msg>  </g:MenuItem>
+								<g:MenuItem ui:field="movingSvcMenu" styleName="menu_item" width="133px" height="14px"> <ui:msg key="moving">Moving</ui:msg></g:MenuItem>
+							</g:MenuBar>
+							</g:MenuItem>
+						
+						</g:MenuBar>
+				</li>
+					<li>
+						<!-- <g:HTMLPanel ui:field="libraryPanel" styleName="menu_item"></g:HTMLPanel> -->
+						<g:MenuBar ui:field="library" styleName="menu_item" height="14px"   animationEnabled="true">
+							<g:MenuItem><ui:msg key="library">Library</ui:msg>
+							<g:MenuBar vertical="true">
+								<g:MenuItem ui:field="buyMenu" styleName="menu_item" width="115px" height="14px"> <ui:msg key="buying">Buying</ui:msg>  </g:MenuItem>
+								<g:MenuItem ui:field="sellMenu" styleName="menu_item" width="115px" height="14px"> <ui:msg key="selling">Selling</ui:msg></g:MenuItem>
+								<g:MenuItem ui:field="rentMenu" styleName="menu_item" width="115px" height="14px"> <ui:msg key="renting">Renting</ui:msg>  </g:MenuItem>
+								<g:MenuItem ui:field="moveMenu" styleName="menu_item" width="115px" height="14px"> <ui:msg key="moving">Moving</ui:msg>  </g:MenuItem>
+								<g:MenuItem ui:field="appraisalMenu" styleName="menu_item" width="115px" height="14px"> <ui:msg key="appraisal">Appraisal</ui:msg></g:MenuItem>
+								<g:MenuItem ui:field="mortgageMenu" styleName="menu_item" width="115px" height="14px"> <ui:msg key="mortgage">Mortgage</ui:msg> </g:MenuItem>
+								<g:MenuItem ui:field="creditReportMenu" styleName="menu_item" width="115px" height="14px"> <ui:msg key="creditReport">Credit Report</ui:msg></g:MenuItem>
+								<g:MenuItem ui:field="lawsMenu" styleName="menu_item" width="115px" height="14px"> <ui:msg key="laws">Laws</ui:msg> Laws</g:MenuItem>
+								<g:MenuItem ui:field="legalMenu" styleName="menu_item" width="115px" height="14px"> <ui:msg key="legalTransactions">Legal Transactions</ui:msg>  </g:MenuItem>
+								<g:MenuItem ui:field="termsMenu" styleName="menu_item" width="115px" height="14px"> <ui:msg key="realEstateTerms">Real Estate Terms</ui:msg> </g:MenuItem>
+							</g:MenuBar>
+							</g:MenuItem>
+						
+						</g:MenuBar>
+						
+					</li>
+					<li>
+						<g:Anchor ui:field="newPropNotifier">
+							<ui:msg key="newPropNotifier" >New Property Notifier</ui:msg>
+						</g:Anchor>
+					</li>
+					<li>
+						<!-- <g:HTMLPanel ui:field="libraryPanel" styleName="menu_item"></g:HTMLPanel> -->
+						<g:MenuBar ui:field="mapMenuBar" styleName="menu_item" height="14px" animationEnabled="true">
+							<g:MenuItem><ui:msg key="map">Map</ui:msg>
+							<g:MenuBar vertical="true">
+								<g:MenuItem ui:field="saleMapMenu" styleName="menu_item" width="55px" height="14px"> <ui:msg key="forSale">For Sale</ui:msg>  </g:MenuItem>
+								<g:MenuItem ui:field="rentMapMenu" styleName="menu_item" width="55px" height="14px"> <ui:msg key="forRent">For Rent</ui:msg></g:MenuItem>
+							</g:MenuBar>
+							</g:MenuItem>
+						
+						</g:MenuBar>
+						
+					</li>
+					<li class="advacesearch_img">
+						<g:Anchor ui:field="advSearch">
+							<ui:msg key="advSearch" >Advance Search</ui:msg>
+						</g:Anchor>
+					</li>
+				</ul>
+			</div>
+
+		<g:HTMLPanel ui:field="breadCrumbPanel" styleName="sub_menu">
+			<g:HTML ui:field="heading">
+			</g:HTML>
+			<g:FlowPanel ui:field="breadcrumbs" />
+		</g:HTMLPanel>
+		<g:HTMLPanel ui:field="contentPanel">
+		</g:HTMLPanel>
+		<div class="float_left">
+			<img src="images/contentindex_btm.gif" alt="" width="963" height="11"
+				border="0" />
+		</div>
+		<div class="clear"></div>
+
+<!--Content End-->
+
+<!--Hotel Pan Start-->
+		<div class="hotel_pan">
+			<div>
+				<img src="images/hotelspan_top.gif" alt="" width="963" height="11"
+					border="0" />
+			</div>
+			<div class="hotelpan_headingcontainer">
+				<h1>
+					<span><ui:msg key="advertise" >Advertise</ui:msg></span>
+				</h1>
+				<img src="images/hotelpan_heading_brd.gif" alt="" width="595"
+					height="1" border="0" />
+			</div>
+			<div class="hotel_pan_inner">
+				<img src="images/Advertisement_bnr1.gif" alt="" width="210"
+					height="100" border="0" />
+				<img src="images/Advertisement_bnr3.jpg" alt="" width="210" height="100" border="0" />
+				<img src="images/Advertisement_bnr2.gif" alt="" width="210"
+					height="100" border="0" />
+				<img src="images/Advertisement_bnr4.jpg" alt="" width="210" height="100" border="0" />
+			</div>
+			<div>
+				<img src="images/hotelspan_btm.gif" alt="" width="963" height="11"
+					border="0" />
+			</div>
+		</div>
+
+<!--Hotel Pan End-->
+
+<!--Footer Start-->
+		<div class="cpyright">Copyright © 2009 Gharonda.com. All Rights
+			Reserved.</div>
+		<div id="footer">
+			<ul>
+				<li>
+					<g:Hyperlink ui:field="homeBottom" targetHistoryToken="{nameTokens.getHomePage}">
+						<ui:msg key="home">Home</ui:msg>
+					</g:Hyperlink>
+				</li>
+				<li>
+				<g:Hyperlink ui:field="aboutUs"
+						targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=About Us//about_us_01_hakkimizda.html;num=2">
+						<ui:msg key="aboutUs">About Us</ui:msg>
+					</g:Hyperlink>
+				</li>
+				<li>
+					<g:Hyperlink ui:field="contactUsBottom" targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getContactUsPage}">
+						<ui:msg key="contactUs">Contact Us</ui:msg>
+					</g:Hyperlink>
+				</li>
+				<li>
+				<g:Hyperlink 
+						targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=Services//advertisement.html;num=10">
+						<ui:msg key="advertise" >Advertise</ui:msg>
+					</g:Hyperlink>
+				</li>
+
+				<li>
+					<g:Hyperlink ui:field="faqBottom" targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=Services//faq.html;num=20">
+						<span>
+							<ui:msg key="faq">F&amp;Q</ui:msg>
+						</span>	
+					</g:Hyperlink>
+				</li>
+				<li>
+				<g:Hyperlink ui:field="siteTerms" targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=About Us//user_agreement.html;num=10"><ui:msg key="siteTerms" >Site Terms</ui:msg> </g:Hyperlink>
+					
+				</li>
+				<li>
+					<g:Hyperlink ui:field="privacyPolicy"
+						targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=About Us//privacy_policy.html;num=2">
+						<ui:msg key="privacyPolicy">Privacy Policy</ui:msg>
+					</g:Hyperlink>
+				</li>
+				<li>
+					<g:Anchor ui:field="newPropNotifierBottom">
+						<ui:msg key="newPropNotifier">New Property Notifier</ui:msg>
+					</g:Anchor>
+				</li>
+				<li class="rss">
+					<a href="#">RSS</a>
+				</li>
+			</ul>
+			<br />
+		</div>
+		<g:HTMLPanel ui:field="blur" styleName="blur">
+		</g:HTMLPanel>
+
+	</g:HTMLPanel>
+</ui:UiBinder>

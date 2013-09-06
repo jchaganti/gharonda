@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration
+ PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+ "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+    <session-factory>
+        
+        <!-- local connection properties -->
+        <property name="hibernate.connection.url">
+            jdbc:mysql://localhost/gem1453_sev?useUnicode=true&amp;connectionCollation=utf8_general_ci&amp;characterSetResults=utf8&amp;characterEncoding=utf8&amp;jdbcCompliantTruncation=false
+        </property>
+        <property name="hibernate.connection.driver_class">
+            com.mysql.jdbc.Driver
+        </property>
+        <property name="hibernate.connection.username">
+            gem1453_sev
+        </property>
+        <property name="hibernate.connection.password">
+            gem1453_sev
+        </property>
+        <property name="hibernate.connection.pool_size">
+            0
+        </property>
+        
+        <!-- property name="hibernate.connection.pool_size"></property -->
+        
+        <!-- dialect for MySQL -->
+        <property name="dialect">
+            org.hibernate.dialect.MySQLDialect
+        </property>
+        
+        <property name="hibernate.show_sql">
+            false
+        </property>
+        <property name="hibernate.transaction.factory_class">
+            org.hibernate.transaction.JDBCTransactionFactory
+        </property>
+        <!-- Bind the getCurrentSession() method to the thread. -->
+        <property name="current_session_context_class">
+            thread
+        </property>
+        <!-- C3P0 stuff -->
+        <property name="hibernate.c3p0.acquire_increment">
+            3
+        </property>
+        <property name="hibernate.c3p0.idle_test_period">
+            14400
+        </property>
+        <property name="hibernate.c3p0.timeout">
+            25200
+        </property>
+        <property name="hibernate.c3p0.max_size">
+            20
+        </property>
+        <property name="hibernate.c3p0.min_size">
+            5
+        </property>
+        <property name="hibernate.c3p0.max_statements">
+            0
+        </property>
+        <property name="hibernate.c3p0.preferredTestQuery">
+            select 1;
+        </property>
+        <mapping resource="Contentitems.hbm.xml"/>
+        <mapping resource="Contentholder.hbm.xml"/>
+        <mapping resource="Emailfrequencies.hbm.xml"/>
+        <mapping resource="Notifierprofiles.hbm.xml"/>
+        <mapping resource="Serviceproviderdetails.hbm.xml"/>
+        <mapping resource="Users.hbm.xml"/>
+        <mapping resource="Favorites.hbm.xml"/>
+        <mapping resource="Neightbourhood.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

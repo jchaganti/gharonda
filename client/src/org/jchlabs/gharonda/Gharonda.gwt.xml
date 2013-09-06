@@ -1,0 +1,31 @@
+<module>
+	<inherits name="com.google.gwt.user.User" />
+	<inherits name="com.google.gwt.user.theme.standard.Standard" />
+	<entry-point class="com.Gharonda.client.Gharonda" />
+	<inherits name="com.gwtplatform.mvp.Mvp" />
+	<inherits name="com.gwtplatform.dispatch.Dispatch" />
+	<inherits name="com.google.gwt.inject.Inject" />
+	<inherits name="com.google.gwt.xml.XML" />
+	<inherits name="com.google.gwt.resources.Resources" />
+	<inherits name="com.google.gwt.uibinder.UiBinder" />
+	<inherits name="com.google.gwt.ajaxloader.AjaxLoader" />
+	<inherits name='com.google.gwt.widgetideas.WidgetIdeas' />
+	<inherits name='com.google.gwt.libideas.LibIdeas' />
+	<inherits name='com.google.gwt.gen2.table.ScrollTable' />
+	<inherits name="com.google.gwt.maps.GoogleMaps" />
+	<inherits name="com.sahibidenev.domain.Domain" />
+	<inherits name="gwtupload.GWTUpload" />
+	<inherits name="com.google.gwt.search.Search"/>
+	<source path='client' />
+	<define-configuration-property name="gin.ginjector"
+		is-multi-valued="false" />
+	<set-configuration-property name="gin.ginjector"
+		value="com.Gharonda.client.gin.GharondaGinjector" />
+	<script
+		src="http://maps.google.com/maps?gwt=1&amp;file=api&amp;v=2&amp;sensor=false&amp;key=ABQIAAAA3OSNBUIKgbwx_191fSkt8xSZmGRNCyaWABauGk7IJpBuwT2C2hTNFLZJz6RSj-41Q2mwlkreyubk5Q" />
+	<inherits name="com.Gharonda.shared.Shared" />
+	<extend-property name="locale" values="tr" />
+	<set-property name="locale" value="tr" />
+	<set-property-fallback name="locale" value="tr" />
+	<extend-property name="locale" values="en" />
+</module>

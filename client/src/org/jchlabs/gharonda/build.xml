@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="ImageViewer" default="all" basedir="D:\ps\eclipse_ws\client">
+	<description>
+		This is build file for GWT module 'com.Gharonda.Gharonda' deployment.
+		GWT Designer generates it each time when you initiate deployment.
+		
+		You can use this file later for manual deployment, but keep in mind, that
+		classpath is hardcoded in it, so after changes in classpath you should
+		regenerate build file.
+	</description>
+
+	<property name="gwt.home" value="D:/ps/3rdParty/gwt-2.0.3" />
+	<property name="gwt.module.id" value="com.Gharonda.Gharonda" />
+	<property name="war.name" value="Gharonda.war" />
+
+	<target name="jars" description="Package up the module project and required projects as jars">
+		<mkdir dir="war/WEB-INF/lib" />
+		<!--=== client ===-->
+		<jar destfile='war/WEB-INF/lib/client.jar'>
+			<fileset dir="D:/ps/eclipse_ws/client/src">
+				<include name="**"/>
+			</fileset>
+			<fileset dir="D:/ps/eclipse_ws/client/bin">
+				<include name="**/*.class"/>
+			</fileset>
+		</jar>
+		<copy todir='war/WEB-INF/lib'>
+			<fileset file="D:\ps\3rdParty\gwt-2.0.3\gwt-dev.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gwtp-0.4-SNAPSHOT.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gwt-ajaxloader.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gin-r137.jar"/>
+			<fileset file="D:\ps\3rdParty\client\log4j-1.2.15.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gwt-dnd-2.6.5.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gwt-dispatch-1.0.0.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gwt-servlet.jar"/>
+			<fileset file="D:\ps\3rdParty\client\guice-2.0.jar"/>
+			<fileset file="D:\ps\3rdParty\client\guice-servlet-2.0.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gwt-presenter-1.1.0-replace-SNAPSHOT.jar"/>
+			<fileset file="D:\ps\3rdParty\server\activation-1.1.jar"/>
+			<fileset file="D:\ps\3rdParty\server\antlr-2.7.6.jar"/>
+			<fileset file="D:\ps\3rdParty\server\aopalliance-1.0.jar"/>
+			<fileset file="D:\ps\3rdParty\server\asm-1.5.3.jar"/>
+			<fileset file="D:\ps\3rdParty\server\asm-attrs-1.5.3.jar"/>
+			<fileset file="D:\ps\3rdParty\server\beanlib-5.0.2beta.jar"/>
+			<fileset file="D:\ps\3rdParty\server\beanlib-hibernate-5.0.2beta.jar"/>
+			<fileset file="D:\ps\3rdParty\server\cglib-2.1_3.jar"/>
+			<fileset file="D:\ps\3rdParty\server\cglib-nodep-2.1_3.jar"/>
+			<fileset file="D:\ps\3rdParty\server\commons-beanutils-1.8.0.jar"/>
+			<fileset file="D:\ps\3rdParty\server\commons-collections-3.2.1.jar"/>
+			<fileset file="D:\ps\3rdParty\server\commons-fileupload-1.2.1.jar"/>
+			<fileset file="D:\ps\3rdParty\server\commons-io-1.4.jar"/>
+			<fileset file="D:\ps\3rdParty\server\commons-lang-2.2.jar"/>
+			<fileset file="D:\ps\3rdParty\server\commons-logging-1.1.1.jar"/>
+			<fileset file="D:\ps\3rdParty\server\dom4j-1.6.1.jar"/>
+			<fileset file="D:\ps\3rdParty\server\dozer-5.0.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gilead4gwt-1.3.1.1665.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gilead-core-1.3.1.1665.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gilead-hibernate-1.3.1.1665.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gin-1.0.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gin-r137.jar"/>
+			<fileset file="D:\ps\3rdParty\server\guice-2.0.jar"/>
+			<fileset file="D:\ps\3rdParty\server\guice-servlet-2.0.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gwt-ajaxloader.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gwt-dispatch-1.0.0.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gwt-dnd-2.6.5.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gwt-incubator-march-02-2009.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gwt-log-2.6.2.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gwt-maps.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gwtp-0.4-SNAPSHOT.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gwt-search.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gwt-servlet.jar"/>
+			<fileset file="D:\ps\3rdParty\server\gwtupload-0.5.7.jar"/>
+			<fileset file="D:\ps\3rdParty\server\hibernate3.jar"/>
+			<fileset file="D:\ps\3rdParty\server\hibernate-core-3.3.2.GA.jar"/>
+			<fileset file="D:\ps\3rdParty\server\hibernate-entitymanager-3.4.0.GA.jar"/>
+			<fileset file="D:\ps\3rdParty\server\javassist-3.10.0.GA.jar"/>
+			<fileset file="D:\ps\3rdParty\server\jms-1.1.jar"/>
+			<fileset file="D:\ps\3rdParty\server\jmxri-1.2.1.jar"/>
+			<fileset file="D:\ps\3rdParty\server\jmxtools-1.2.1.jar"/>
+			<fileset file="D:\ps\3rdParty\server\jta-1.1.jar"/>
+			<fileset file="D:\ps\3rdParty\server\junit-3.8.1.jar"/>
+			<fileset file="D:\ps\3rdParty\server\log4j-1.2.15.jar"/>
+			<fileset file="D:\ps\3rdParty\server\mail-1.4.jar"/>
+			<fileset file="D:\ps\3rdParty\server\mysql-connector-java-5.0.5.jar"/>
+			<fileset file="D:\ps\3rdParty\server\persistence-api-1.0.jar"/>
+			<fileset file="D:\ps\3rdParty\server\quartz-all-1.6.6.jar"/>
+			<fileset file="D:\ps\3rdParty\server\slf4j-api-1.5.2.jar"/>
+			<fileset file="D:\ps\3rdParty\server\slf4j-api-1.5.8.jar"/>
+			<fileset file="D:\ps\3rdParty\server\slf4j-jdk14-1.4.3.jar"/>
+			<fileset file="D:\ps\3rdParty\server\slf4j-jdk14-1.5.8.jar"/>
+			<fileset file="D:\ps\3rdParty\server\slf4j-log4j12-1.4.2.jar"/>
+			<fileset file="D:\ps\3rdParty\server\xml-apis-1.0.b2.jar"/>
+			<fileset file="D:\ps\3rdParty\server\servlet.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gwt-log-2.6.2.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gwtupload-0.5.7.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gwt-maps.jar"/>
+			<fileset file="D:\ps\3rdParty\client\gwt-search.jar"/>
+			<fileset file="D:\Users\jchagant\Downloads\gwt-incubator-20091216-r1739.jar"/>
+		</copy>
+		<!--=== server ===-->
+		<jar destfile='war/WEB-INF/lib/server.jar'>
+			<fileset dir="D:/ps/eclipse_ws/server/src/main/java">
+				<include name="**"/>
+			</fileset>
+			<fileset dir="D:/ps/eclipse_ws/server/src/main/resources">
+				<include name="**"/>
+			</fileset>
+			<fileset dir="D:/ps/eclipse_ws/server/bin">
+				<include name="**/*.class"/>
+			</fileset>
+			<fileset dir="D:/ps/eclipse_ws/server/bin">
+				<include name="**/*.class"/>
+			</fileset>
+		</jar>		
+	</target>
+
+	<target name="gwt-compile" description="Compile to JavaScript">
+		<java classname="com.google.gwt.dev.Compiler" fork="yes" failonerror="true" maxmemory="256m">
+			<classpath>
+				<pathelement location="D:/ps/eclipse_ws/client/src" />
+				<pathelement location="D:/ps/eclipse_ws/server/src/main/java" />
+				<pathelement location="D:/ps/eclipse_ws/server/src/main/resources" />
+				<pathelement location="D:/ps/eclipse_ws/client/bin" />
+				<pathelement location="D:/ps/3rdParty/gwt-2.0.3/gwt-user.jar" />
+				<pathelement location="D:/ps/3rdParty/gwt-2.0.3/gwt-dev.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gwtp-0.4-SNAPSHOT.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gwt-ajaxloader.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gin-r137.jar" />
+				<pathelement location="D:/ps/3rdParty/client/log4j-1.2.15.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gwt-dnd-2.6.5.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gwt-dispatch-1.0.0.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gwt-servlet.jar" />
+				<pathelement location="D:/ps/3rdParty/client/guice-2.0.jar" />
+				<pathelement location="D:/ps/3rdParty/client/guice-servlet-2.0.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gwt-presenter-1.1.0-replace-SNAPSHOT.jar" />
+				<pathelement location="D:/ps/eclipse_ws/server/bin" />
+				<pathelement location="D:/ps/3rdParty/server/activation-1.1.jar" />
+				<pathelement location="D:/ps/3rdParty/server/antlr-2.7.6.jar" />
+				<pathelement location="D:/ps/3rdParty/server/aopalliance-1.0.jar" />
+				<pathelement location="D:/ps/3rdParty/server/asm-1.5.3.jar" />
+				<pathelement location="D:/ps/3rdParty/server/asm-attrs-1.5.3.jar" />
+				<pathelement location="D:/ps/3rdParty/server/beanlib-5.0.2beta.jar" />
+				<pathelement location="D:/ps/3rdParty/server/beanlib-hibernate-5.0.2beta.jar" />
+				<pathelement location="D:/ps/3rdParty/server/cglib-2.1_3.jar" />
+				<pathelement location="D:/ps/3rdParty/server/cglib-nodep-2.1_3.jar" />
+				<pathelement location="D:/ps/3rdParty/server/commons-beanutils-1.8.0.jar" />
+				<pathelement location="D:/ps/3rdParty/server/commons-collections-3.2.1.jar" />
+				<pathelement location="D:/ps/3rdParty/server/commons-fileupload-1.2.1.jar" />
+				<pathelement location="D:/ps/3rdParty/server/commons-io-1.4.jar" />
+				<pathelement location="D:/ps/3rdParty/server/commons-lang-2.2.jar" />
+				<pathelement location="D:/ps/3rdParty/server/commons-logging-1.1.1.jar" />
+				<pathelement location="D:/ps/3rdParty/server/dom4j-1.6.1.jar" />
+				<pathelement location="D:/ps/3rdParty/server/dozer-5.0.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gilead4gwt-1.3.1.1665.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gilead-core-1.3.1.1665.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gilead-hibernate-1.3.1.1665.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gin-1.0.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gin-r137.jar" />
+				<pathelement location="D:/ps/3rdParty/server/guice-2.0.jar" />
+				<pathelement location="D:/ps/3rdParty/server/guice-servlet-2.0.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gwt-ajaxloader.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gwt-dispatch-1.0.0.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gwt-dnd-2.6.5.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gwt-incubator-march-02-2009.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gwt-log-2.6.2.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gwt-maps.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gwtp-0.4-SNAPSHOT.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gwt-search.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gwt-servlet.jar" />
+				<pathelement location="D:/ps/3rdParty/server/gwtupload-0.5.7.jar" />
+				<pathelement location="D:/ps/3rdParty/server/hibernate3.jar" />
+				<pathelement location="D:/ps/3rdParty/server/hibernate-core-3.3.2.GA.jar" />
+				<pathelement location="D:/ps/3rdParty/server/hibernate-entitymanager-3.4.0.GA.jar" />
+				<pathelement location="D:/ps/3rdParty/server/javassist-3.10.0.GA.jar" />
+				<pathelement location="D:/ps/3rdParty/server/jms-1.1.jar" />
+				<pathelement location="D:/ps/3rdParty/server/jmxri-1.2.1.jar" />
+				<pathelement location="D:/ps/3rdParty/server/jmxtools-1.2.1.jar" />
+				<pathelement location="D:/ps/3rdParty/server/jta-1.1.jar" />
+				<pathelement location="D:/ps/3rdParty/server/junit-3.8.1.jar" />
+				<pathelement location="D:/ps/3rdParty/server/log4j-1.2.15.jar" />
+				<pathelement location="D:/ps/3rdParty/server/mail-1.4.jar" />
+				<pathelement location="D:/ps/3rdParty/server/mysql-connector-java-5.0.5.jar" />
+				<pathelement location="D:/ps/3rdParty/server/persistence-api-1.0.jar" />
+				<pathelement location="D:/ps/3rdParty/server/quartz-all-1.6.6.jar" />
+				<pathelement location="D:/ps/3rdParty/server/slf4j-api-1.5.2.jar" />
+				<pathelement location="D:/ps/3rdParty/server/slf4j-api-1.5.8.jar" />
+				<pathelement location="D:/ps/3rdParty/server/slf4j-jdk14-1.4.3.jar" />
+				<pathelement location="D:/ps/3rdParty/server/slf4j-jdk14-1.5.8.jar" />
+				<pathelement location="D:/ps/3rdParty/server/slf4j-log4j12-1.4.2.jar" />
+				<pathelement location="D:/ps/3rdParty/server/xml-apis-1.0.b2.jar" />
+				<pathelement location="D:/ps/3rdParty/server/servlet.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gwt-log-2.6.2.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gwtupload-0.5.7.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gwt-maps.jar" />
+				<pathelement location="D:/ps/3rdParty/client/gwt-search.jar" />
+				<pathelement location="D:/Users/jchagant/Downloads/gwt-incubator-20091216-r1739.jar" />
+				<pathelement location="D:/ps/3rdParty/gwt-2.0.3/gwt-dev.jar" />
+			</classpath>
+			<arg value="-style"/>
+			<arg value="OBFUSCATED"/>
+			<arg value="${gwt.module.id}" />
+		</java>
+	</target>
+
+	<target name="war" depends="gwt-compile, jars">
+		<delete file="${war.name}" />
+		<jar destfile="${war.name}" basedir="war" duplicate="preserve" />
+	</target>
+	
+	<target name="deploy" depends="war">
+		<move file="${war.name}" todir="d:/ps" />
+	</target>
+
+	<target name="all" depends="deploy" />
+
+</project>

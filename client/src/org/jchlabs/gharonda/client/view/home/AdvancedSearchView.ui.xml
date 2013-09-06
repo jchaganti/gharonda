@@ -1,0 +1,590 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<g:HTMLPanel ui:field="contentPanel">
+		<div class="leftcol_aboutus">
+			<table width="753" cellspacing="0" cellpadding="0" border="0">
+				<tbody>
+					<tr>
+						<td width="7" valign="top" height="24" align="left">
+							<img width="7" height="24" border="0" alt=""
+								src="images/graybox_left.gif" />
+						</td>
+						<td valign="top" align="left" class="bg_graybox">
+							<h1>
+								<ui:msg key="advSearch">
+									Advanced
+									<span>Search</span>
+								</ui:msg>
+							</h1>
+						</td>
+						<td width="7" valign="top" height="24" align="right">
+							<img width="7" height="24" border="0" alt=""
+								src="images/graybox_right.gif" />
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="innercontent_advance">
+				<div id="form">
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<td valign="middle" align="left">
+									<img width="102" height="94" border="0" alt=""
+										src="images/img1_advanced_search.gif" />
+								</td>
+								<td valign="top" align="left" style="padding-left: 20px;">
+									<table>
+										<tr>
+											<td valign="top" align="left">
+												<table width="100%">
+													<tr>
+														<td nowrap="nowrap" align="right" style="padding-right: 95px;">
+															<input type="radio" name="pMode" id="saleRB" checked="true">
+																<span style="font-weight: bold; padding-right: 10px;">
+																	<ui:msg key="sale">Sale</ui:msg>
+																</span>
+															</input>
+														
+															<input type="radio" name="pMode" id="rentRB">
+																<span style="font-weight:bold">
+																	<ui:msg key="rent">Rent</ui:msg>
+																</span>
+															</input>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" align="left">
+												<ol class="margin_ol">
+													<li>
+														<label>
+															<ui:msg key="type">Type:</ui:msg>
+														</label>
+														<g:ListBox ui:field="pTypesList" styleName="text_field3" />
+													</li>
+													<li class="clear" />
+													<li>
+														<label>
+															<ui:msg key="state">State:</ui:msg>
+														</label>
+														<g:TextBox ui:field="state" styleName="text_field2" />
+														<g:HTMLPanel ui:field="statePanel" />
+													</li>
+													<li class="clear" />
+													<li>
+														<label>
+															<ui:msg key="city">City:</ui:msg>
+														</label>
+														<g:TextBox ui:field="city" styleName="text_field2" />
+														<g:HTMLPanel ui:field="cityPanel" />
+													</li>
+													<li class="clear" />
+													<li>
+														<label>
+															<ui:msg key="suburb">Suburb:</ui:msg>
+														</label>
+														<g:TextBox ui:field="suburb" styleName="text_field2" />
+														<g:HTMLPanel ui:field="suburbPanel" />
+													</li>
+												</ol>
+											</td>
+											<td valign="top" align="left">
+												<ol class="margin1_ol">
+													<li>
+														<label>
+															<ui:msg key="price">Price:</ui:msg>
+														</label>
+														<g:ListBox ui:field="priceTypesList" styleName="text_field3" />
+													</li>
+													<li class="clear" />
+													<li>
+														<label>
+															<ui:msg key="sft">Sq Ft.:</ui:msg>
+														</label>
+														<g:ListBox ui:field="sftTypesList" styleName="text_field3" />
+													</li>
+													<li class="clear" />
+													<li>
+														<label>
+															<ui:msg key="room">Room #:</ui:msg>
+														</label>
+														<g:ListBox ui:field="bedRoomsList" styleName="text_field3" />
+													</li>
+													<li class="clear" />
+													<li>
+														<label>
+															<ui:msg key="heat">Heat:</ui:msg>
+														</label>
+														<g:ListBox ui:field="heatTypesList" styleName="text_field3" />
+													</li>
+												</ol>
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<tr>
+								<td valign="top" align="right" style="padding:10px 0px 0px 510px "
+									colspan="3">
+									<g:Anchor ui:field="advSearchTop">
+										<img border="0" align="right" alt=""
+											src="images/btn_startserach.gif" />
+									</g:Anchor>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<span class="seperator1" />
+				<div id="checkbox_div">
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<td width="255" valign="top" align="left">
+									<ol>
+										<li>
+											<g:CheckBox ui:field="woodwork" />
+											<label>
+												<ui:msg key="Woodwork">Woodwork</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="alarm" />
+											<label>
+												<ui:msg key="Alarm">Alarm</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="utilityRoom" />
+											<label>
+												<ui:msg key="UtilityRoom">Utility Room</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="steelDoor" />
+											<label>
+												<ui:msg key="SteelDoor">Steel Door</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="showerCabin" />
+											<label>
+												<ui:msg key="ShowerCabin">Shower Cabin</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="wallPaper" />
+											<label>
+												<ui:msg key="WallPaper">Wall Paper</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="parentsBathroom" />
+											<label>
+												<ui:msg key="ParentsBathroom">Parent's Bathroom</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="thermopane" />
+											<label>
+												<ui:msg key="Thermopane">Thermopane</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="jacuzzi" />
+											<label>
+												<ui:msg key="Jacuzzi">Jacuzzi</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="crownMolding" />
+											<label>
+												<ui:msg key="CrownMolding">Crown Molding</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="laminateFloor" />
+											<label>
+												<ui:msg key="LaminateFloor">Laminate Floor</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="vinylFloor" />
+											<label>
+												<ui:msg key="VinylFloor">Vinyl Floor</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="shade" />
+											<label>
+												<ui:msg key="Shade">Shade</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="hardwoodFloor" />
+											<label>
+												<ui:msg key="HardwoodFloor">Hardwood Floor</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="vcWindow" />
+											<label>
+												<ui:msg key="VCWindow">VC Window</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="security" />
+											<label>
+												<ui:msg key="Security">Security</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="hydrophore" />
+											<label>
+												<ui:msg key="Hydrophore">Hydrophore</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="insulations" />
+											<label>
+												<ui:msg key="Insulations">Insulations</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="generator" />
+											<label>
+												<ui:msg key="Generator">Generator</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="siding" />
+											<label>
+												<ui:msg key="Siding">Siding</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="housingComplex" />
+											<label>
+												<ui:msg key="HousingComplex">Housing Complex</ui:msg>
+											</label>
+										</li>
+									</ol>
+								</td>
+								<td width="240" valign="top" align="left">
+									<ol>
+										<li>
+											<g:CheckBox ui:field="sportFacilitiy" />
+											<label>
+												<ui:msg key="SportFacilitiy">Sport Facilitiy</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="urgent" />
+											<label>
+												<ui:msg key="Urgent">Urgent</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="bargain" />
+											<label>
+												<ui:msg key="Bargain">Bargain</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="adsl" />
+											<label>
+												<ui:msg key="ADSL">ADSL</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="builtInOwen" />
+											<label>
+												<ui:msg key="BuiltinOwen">Built-in Owen</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="balcony" />
+											<label>
+												<ui:msg key="Balcony">Balcony</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="barbeque" />
+											<label>
+												<ui:msg key="Barbeque">Barbeque</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="homeAppliance" />
+											<label>
+												<ui:msg key="HomeAppliance">Home Appliance</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="painted" />
+											<label>
+												<ui:msg key="Painted">Painted</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="dishWasher" />
+											<label>
+												<ui:msg key="DishWasher">Dish Washer</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="refrigerator" />
+											<label>
+												<ui:msg key="Refrigerator">Refrigerator</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="washingMachine" />
+											<label>
+												<ui:msg key="WashingMachine">Washing Machine</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="wifi" />
+											<label>
+												<ui:msg key="WIFI">WI-FI</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="owen" />
+											<label>
+												<ui:msg key="Owen">Owen</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="builtInCloset" />
+											<label>
+												<ui:msg key="BuiltinCloset">Built-in Closet</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="videoIntercom" />
+											<label>
+												<ui:msg key="VideoIntercom">Video Intercom</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="hiltonBathroom" />
+											<label>
+												<ui:msg key="HiltonBathroom">Hilton Bathroom</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="cellar" />
+											<label>
+												<ui:msg key="Cellar">Cellar</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="airConditioning" />
+											<label>
+												<ui:msg key="AirConditioning">Air Conditioning</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="furniture" />
+											<label>
+												<ui:msg key="Furniture">Furniture</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="sauna" />
+											<label>
+												<ui:msg key="Sauna">Sauna</ui:msg>
+											</label>
+										</li>
+									</ol>
+								</td>
+								<td valign="top" align="left">
+									<ol>
+										<li>
+											<g:CheckBox ui:field="cookstove" />
+											<label>
+												<ui:msg key="Cookstove">Cookstove</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="fireplace" />
+											<label>
+												<ui:msg key="Fireplace">Fireplace</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="patioTerrace" />
+											<label>
+												<ui:msg key="PatioTerrace">Patio-Terrace</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="elevator" />
+											<label>
+												<ui:msg key="Elevator">Elevator</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="cableSatellite" />
+											<label>
+												<ui:msg key="CableSatellite">Cable-Satellite</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="privateGarage" />
+											<label>
+												<ui:msg key="PrivateGarage">Private Garage</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="doormen" />
+											<label>
+												<ui:msg key="Doormen">Doormen</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="kindergarden" />
+											<label>
+												<ui:msg key="Kindergarden">Kindergarden</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="parkingLot" />
+											<label>
+												<ui:msg key="ParkingLot">Parking Lot</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="pressureWaterTank" />
+											<label>
+												<ui:msg key="PressureWaterTank">Pressure Water Tank</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="tennisCourt" />
+											<label>
+												<ui:msg key="TennisCourt">Tennis Court</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="fireExit" />
+											<label>
+												<ui:msg key="FireExit">Fire Exit</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="openAirSwimmingPool" />
+											<label>
+												<ui:msg key="OpenairSwimmingPool">Open-air Swimming Pool</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="indoorSwimmingPool" />
+											<label>
+												<ui:msg key="IndoorSwimmingPool">Indoor Swimming Pool</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="closeToAirport" />
+											<label>
+												<ui:msg key="ClosetoAirport">Close to Airport</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="closeToSubwayStation" />
+											<label>
+												<ui:msg key="ClosetoSubwayStation">Close to Subway Station</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="nearMetrobus" />
+											<label>
+												<ui:msg key="NearMetrobus">Near Metrobus</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="closetoMinibusRoad" />
+											<label>
+												<ui:msg key="ClosetoMinibusRoad">Close to Minibus Road</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="closeToBusStation" />
+											<label>
+												<ui:msg key="ClosetoBusStation">Close to Bus Station</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="closeToTEM" />
+											<label>
+												<ui:msg key="ClosetoTEM">Close to TEM</ui:msg>
+											</label>
+										</li>
+										<li>
+											<g:CheckBox ui:field="solarEnergy" />
+											<label>
+												<ui:msg key="SolarEnergy">Solar Energy</ui:msg>
+											</label>
+										</li>
+									</ol>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="required">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td width="33%" valign="middle" align="left">
+								<span class="staric">*</span>
+								<span class="black_txt1"><ui:msg key="required">Required Fields</ui:msg></span>
+							</td>
+
+							<td width="67%" valign="middle" align="right" style="padding-left: 310px;">
+								<g:Anchor ui:field="advSearch">
+									<img border="0" align="left" alt=""
+										src="images/btn_startserach.gif" />
+								</g:Anchor>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="rightcol_aboutus">
+			<div class="featured1">
+				<table width="177" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td width="7" valign="top" height="24" align="left">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_left.gif" />
+							</td>
+							<td valign="top" align="left" class="bg_graybox">
+								<h1>
+									<ui:msg key="featured">Featured Listing</ui:msg>
+								</h1>
+							</td>
+							<td width="7" valign="top" height="24" align="right">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_right.gif" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<g:HTMLPanel ui:field="featuredListing">
+				</g:HTMLPanel>
+			</div>
+		</div>
+		<div class="clear" />
+	</g:HTMLPanel>
+</ui:UiBinder>

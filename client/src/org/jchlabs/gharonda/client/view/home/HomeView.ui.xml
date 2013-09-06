@@ -1,0 +1,511 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+	<ui:with type="com.Gharonda.client.NameTokens" field="nameTokens"></ui:with>
+	<g:HTMLPanel ui:field="contentPanel">
+		<div class="leftcol_index">
+			<div class="blue_pan">
+				<div>
+					<img border="0" alt="" src="images/bluebox_top_index.gif" />
+				</div>
+				<div class="blue_pan_inner">
+					<div>
+						<table width="100%" cellspacing="0" cellpadding="0" border="0">
+							<tbody>
+								<tr>
+									<td valign="middle" align="left">
+										<h1 style="font-size:15px;padding-bottom:14px;">
+											<ui:msg key="quickSearch">Quick Search</ui:msg>
+										</h1>
+									</td>
+									<td valign="middle" align="right" style="padding-right:10px;">
+										<g:Hyperlink ui:field="advSearch1"
+											targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getAdvSearchPage}"
+											styleName="advance_search1">
+											<ui:msg key="advSearch">Advanced Search</ui:msg>
+										</g:Hyperlink>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="textfield_container">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0">
+							<tbody>
+								<tr>
+									<td valign="middle" align="left">
+										<g:TextBox ui:field="searchText" styleName="text_field" />
+										<g:HTMLPanel ui:field="searchTextPanel" />
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="textfield_container1">
+						<table width="100%" cellspacing="0" cellpadding="0" border="0">
+							<tbody>
+								<tr style="font-weight:bold">
+									<td valign="middle" align="left">
+										<ui:msg key="adType">Ad Type</ui:msg>
+									</td>
+									<td valign="middle" align="left">
+										<ui:msg key="propertyType">Property Type</ui:msg>
+									</td>
+									<td valign="middle" align="left">
+										<ui:msg key="price">Price</ui:msg>
+									</td>
+									<td valign="middle" align="left">
+										<ui:msg key="area">Area m2</ui:msg>
+									</td>
+									<td valign="middle" align="left">
+									</td>
+								</tr>
+								<tr>
+									<td valign="middle" align="left">
+										<g:ListBox ui:field="modeTypesList" styleName="text_field1" />
+									</td>
+									<td valign="middle" align="left">
+										<g:ListBox ui:field="pTypesList" styleName="text_field1" />
+									</td>
+									<td valign="middle" align="left">
+										<g:ListBox ui:field="priceTypesList" styleName="text_field1" />
+									</td>
+									<td valign="middle" align="left">
+										<g:ListBox ui:field="sftTypesList" styleName="text_field1" />
+									</td>
+									<td valign="middle" align="left">
+										<g:Anchor ui:field="basicSearch">
+											<img border="0" align="left" alt="" src="images/btn2.gif" />
+										</g:Anchor>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div style="height: 11px;">
+					<img border="0" alt="" src="images/bluebox_btm_index.gif" />
+				</div>
+			</div>
+			<table width="100%" cellspacing="0" cellpadding="0" border="0">
+				<tbody>
+					<tr>
+						<td valign="top" align="left">
+							<div class="graybox">
+								<table width="100%" cellspacing="0" cellpadding="0"
+									border="0">
+									<tbody>
+										<tr>
+											<td width="7" valign="top" height="24" align="left">
+												<img width="7" height="24" border="0" alt=""
+													src="images/graybox_left.gif" />
+											</td>
+											<td valign="top" align="left" class="bg_graybox">
+												<h1 class="heading_quicklink">
+													<ui:msg key="quickLink">
+														Quick
+														<span>Link</span>
+													</ui:msg>
+												</h1>
+											</td>
+											<td width="7" valign="top" height="24" align="right">
+												<img width="7" height="24" border="0" alt=""
+													src="images/graybox_right.gif" />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="graybox_inner">
+									<div class="graybox_inner1">
+										<g:Anchor ui:field="woAgent1">
+											<ui:msg key="whySaleByOwner">Why Sale By Owner?</ui:msg>
+										</g:Anchor>
+										<div class="graybox_sub_inner1">
+											<g:Anchor ui:field="woAgent2">
+												<ui:msg key="sellWOAgent">Can You sell</ui:msg>
+												<br />
+												<ui:msg key="woAgent"> Without Agent</ui:msg>
+											</g:Anchor>
+										</div>
+									</div>
+									<div class="seperator" />
+									<div class="graybox_inner2">
+										<g:Anchor ui:field="aboutUs1">
+											<ui:msg key="whyGharonda">Why Gharonda.com?</ui:msg>
+										</g:Anchor>
+										<div class="graybox_sub_inner2">
+											<g:Anchor ui:field="aboutUs2">
+												<ui:msg key="findOnly">You will find only</ui:msg>
+												<br />
+												<ui:msg key="fsboListing"> FSBO</ui:msg>
+											</g:Anchor>
+										</div>
+									</div>
+									<div class="seperator" />
+									<div class="graybox_inner21">
+										<g:Anchor ui:field="compareSites1">
+											<ui:msg key="GharondaAnd">Gharonda.com and
+											</ui:msg>
+										</g:Anchor>
+										<div class="graybox_sub_inner21">
+											<g:Anchor ui:field="compareSites2">
+												<ui:msg key="otherWebsites">Other Websites</ui:msg>
+												<br />
+												<ui:msg key="compare"> Compare</ui:msg>
+											</g:Anchor>
+										</div>
+									</div>
+									<div class="seperator" />
+									<div class="graybox_inner22">
+										<g:Anchor ui:field="searchMap1">
+											<ui:msg key="searchMap">Search on Map</ui:msg>
+										</g:Anchor>
+										<div class="graybox_sub_inner22">
+											<g:Anchor ui:field="searchMap2">
+												<ui:msg key="saleOrRent">For Sale or Rent</ui:msg>
+												<br />
+												<ui:msg key="searchNow"> Search Now</ui:msg>
+											</g:Anchor>
+										</div>
+									</div>
+									<div class="seperator">
+									</div>
+								</div>
+								<div class="grayboxinner_rounded">
+									<g:Anchor ui:field="notifier1">
+										<ui:msg key="recEmail">Receive e-mail</ui:msg>
+									</g:Anchor>
+									<div class="grayboxinner_sub_rounded">
+										<g:Anchor ui:field="notifier2">
+											<ui:msg key="newListings">For New Listings</ui:msg>
+											<br />
+											<ui:msg key="enterCriterias">Enter Your Criterias</ui:msg>
+										</g:Anchor>
+									</div>
+								</div>
+								<div class="float_left">
+									<img src="images/graybox_inner3_btm.gif" alt="" width="175"
+										height="7" border="0" />
+								</div>
+							</div>
+							<div class="graybox1">
+								<table width="100%" cellspacing="0" cellpadding="0"
+									border="0">
+									<tbody>
+										<tr>
+											<td width="7" valign="top" height="24" align="left">
+												<img width="7" height="24" border="0" alt=""
+													src="images/graybox_left.gif" />
+											</td>
+											<td valign="top" align="left" class="bg_graybox">
+												<h1 class="heading_bargains">
+													<ui:msg key="bargains">Bargains</ui:msg>
+												</h1>
+											</td>
+											<td width="7" valign="top" height="24" align="right">
+												<img width="7" height="24" border="0" alt=""
+													src="images/graybox_right.gif" />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<g:HTMLPanel ui:field="bargains">
+								</g:HTMLPanel>
+								<div class="float_left">
+									<img width="178" height="7" border="0" alt=""
+										src="images/graybox_inner3_btm.gif" />
+								</div>
+							</div>
+							<div class="graybox1">
+								<table width="100%" cellspacing="0" cellpadding="0"
+									border="0">
+									<tbody>
+										<tr>
+											<td width="7" valign="top" height="24" align="left">
+												<img width="7" height="24" border="0" alt=""
+													src="images/graybox_left.gif" />
+											</td>
+											<td valign="top" align="left" class="bg_graybox">
+												<h1 class="heading_justlisted">
+													<ui:msg key="justListed">Just listed</ui:msg>
+												</h1>
+											</td>
+											<td width="7" valign="top" height="24" align="right">
+												<img width="7" height="24" border="0" alt=""
+													src="images/graybox_right.gif" />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<g:HTMLPanel ui:field="justListed">
+								</g:HTMLPanel>
+								<div class="float_left">
+									<img width="178" height="7" border="0" alt=""
+										src="images/graybox_inner3_btm.gif" />
+								</div>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td valign="top" align="left">
+							<div class="headlines">
+								<table width="361" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td width="7" valign="top" height="24" align="left">
+												<img width="7" height="24" border="0" alt=""
+													src="images/graybox_left.gif" />
+											</td>
+											<td valign="top" align="left" class="bg_graybox">
+												<h1>
+													<ui:msg key="headLine">Headline</ui:msg>
+												</h1>
+											</td>
+											<td width="7" valign="top" height="24" align="right">
+												<img width="7" height="24" border="0" alt=""
+													src="images/graybox_right.gif" />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="headlines_inner">
+									<div id="tab">
+										<g:Anchor ui:field="topNews">
+											<ui:msg key="topNews">Top News</ui:msg>
+										</g:Anchor>
+										<g:Anchor ui:field="mostComments">
+											<ui:msg key="mostComments">Most Comments</ui:msg>
+										</g:Anchor>
+										<g:Hyperlink ui:field="mostEmailed">
+											<ui:msg key="mostEmailed">Most Emailed</ui:msg>
+										</g:Hyperlink>
+									</div>
+									<g:HTMLPanel ui:field="topNewsLinks">
+										<ul>
+											<li>
+												<g:Hyperlink ui:field='buying01'
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=01 Buying//Buying_01_ilk_evimi_aliyorum.html;num=5">İlk Evimi Alıyorum</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="buying02"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=01 Buying//Buying_02_ev_alimi_sirasinda_yapilan_hatalar.html;num=3">Ev Alımı Sırasında Yapılan Hatalar
+												</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="buying03"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=01 Buying//Buying_03_en_iyi_ev_alim_zamani.html;num=2">En İyi Ev Alım Zamanı</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="buying04"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=01 Buying//Buying_04_emlak alirken_dikkat.html;num=4">Emlak Alırken Dikkat!</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="buying05"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=01 Buying//Buying_05_ev_alirken_aradiginiz_onemli_noktalar.html;num=4">Ev Alırken Aradığınız Önemli Noktalar
+												</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="buying06"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=01 Buying//Buying_06_satin_almak_mi_yoksa_kiralamakmi.html;num=3">Satın Almak mı Kiralamak mı?
+												</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="buying07"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=01 Buying//Buying_07_ev_sahibi_olmanin_bazi_avantajlari.html;num=3">Ev Sahibi Olmanızın Bazı Avantajları
+												</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="buying08"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=01 Buying//Buying_08_emlak_danismaninizi_secerken_bilmeniz_gerekenler.html;num=6"> Danışmanınızı Seçerken Bilmeniz
+													Gerekenler</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="buying09"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=01 Buying//Buying_09_konut_yapi_kooperatifleri.html;num=5"> Konut Yapı Kooperatifi</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="buying10"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=01 Buying//Buying_10_ticari_gayrimenkul_yatiriminda_dikkat.html;num=3"> Ticari Emlak Yatırımında Dikkat
+												</g:Hyperlink>
+											</li>
+										</ul>
+									</g:HTMLPanel>
+									<g:HTMLPanel ui:field="mostCommentsLinks">
+										<ul>
+											<li>
+												<g:Hyperlink ui:field="mostComments01"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=06 Mortgage//mortgage_01_mortgage_nedir.html;num=4">Mortgage Nedir?</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="mostComments02"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=06 Mortgage//mortgage_02_mortgage_senedi_nasil_olusuyor_part_1.html;num=3">Mortgage Senedi Nasıl Oluşuyor
+													Part-I</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="mostComments03"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=06 Mortgage//mortgage_03_mortgage_senedi_nasil_olusuyor_part_2.html;num=4">Mortgage Senedi Nasıl Oluşuyor
+													Part-II</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="mostComments04"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=06 Mortgage//mortgage_04_mortgage_senedi_nasil_olusuyor_part_3.html;num=3">Mortgage Senedi Nasıl Oluşuyor
+													Part-III</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="mostComments05"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=06 Mortgage//mortgage_05_mortgage_senedi_nasil_olusuyor_part_4.html;num=5">Mortgage Senedi Nasıl Oluşuyor
+													Part-IV</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="mostComments06"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=06 Mortgage//mortgage_06_kredi_basvurusunda_dikkat.html;num=3">Kredi Basvurusunda Dikkat
+												</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="mostComments07"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=06 Mortgage//mortgage_07_faiz_oraniniza_etkisi_olan_ana_faktorler.html;num=5">Faiz Oranınıza Etkisi Olan Ana
+													Faktörler</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="mostComments08"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=06 Mortgage//mortgage_08_ekonomik_sartlar_ve_faiz_oranlari.html;num=6">Ekonomik Şartlar ve Faiz
+													Oranları</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="mostComments09"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=06 Mortgage//mortgage_09_ekonomik_verilerin_faiz_oranlarina_etkisi.html;num=3">Ekonomik Verilerin Faiz
+													Oranlarına Etkis</g:Hyperlink>
+											</li>
+											<li>
+												<g:Hyperlink ui:field="mostComments10"
+													targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=06 Mortgage//mortgage_10_kredi_yenileme.html;num=2">Kredi Yenileme</g:Hyperlink>
+											</li>
+										</ul>
+									</g:HTMLPanel>
+								</div>
+							</div>
+							<div class="services">
+								<table width="179" cellspacing="0" cellpadding="0" border="0">
+									<tbody>
+										<tr>
+											<td width="7" valign="top" height="24" align="left">
+												<img width="7" height="24" border="0" alt=""
+													src="images/graybox_left.gif" />
+											</td>
+											<td valign="top" align="left" class="bg_graybox">
+												<h1>
+													<ui:msg key="services">Services</ui:msg>
+												</h1>
+											</td>
+											<td width="7" valign="top" height="24" align="right">
+												<img width="7" height="24" border="0" alt=""
+													src="images/graybox_right.gif" />
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<div class="services_inner">
+									<ul>
+										<li class="services1">
+											<g:Anchor ui:field="notifier3">
+												<ui:msg key="propNotifier">Property Notifier</ui:msg>
+											</g:Anchor>
+										</li>
+										<li class="services2">
+											<g:Hyperlink ui:field="mortgageCalculators">
+												<ui:msg key="mortgageCalculators">Mortgage Calculators</ui:msg>
+											</g:Hyperlink>
+										</li>
+										<li class="services3">
+											<g:Hyperlink ui:field="serviceProvider">
+												<ui:msg key="serviceProvider">Service Provider</ui:msg>
+											</g:Hyperlink>
+										</li>
+										<li class="services4">
+											<g:Hyperlink ui:field="applyMortgage"
+												targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=Services//services_mortgage.html;num=2">
+												<ui:msg key="applyMortgage">Apply Mortgage</ui:msg>
+											</g:Hyperlink>
+										</li>
+										<li class="services5">
+											<g:Hyperlink ui:field="appraisal"
+												targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=Services//services_appraisal.html;num=2">
+												<ui:msg key="applyAppraisal">Apply Appraisal</ui:msg>
+											</g:Hyperlink>
+										</li>
+										<li class="services6">
+											<g:Hyperlink ui:field="applyInsurance">
+												<ui:msg key="applyInsurance">Apply Insurance</ui:msg>
+											</g:Hyperlink>
+										</li>
+										<li class="services7">
+											<g:Hyperlink ui:field="moving"
+												targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getArticlePage};url=Services//services_moving.html;num=2">
+												<ui:msg key="moving">Moving</ui:msg>
+											</g:Hyperlink>
+										</li>
+										<li class="services8">
+											<g:Hyperlink ui:field="builders">
+												<ui:msg key="builders">Builders</ui:msg>
+											</g:Hyperlink>
+										</li>
+										<li class="services9">
+											<g:Hyperlink ui:field="forms">
+												<ui:msg key="forms">Forms</ui:msg>
+											</g:Hyperlink>
+										</li>
+										<li class="services10">
+											<g:Hyperlink ui:field="eBook">
+												<ui:msg key="eBook">eBook</ui:msg>
+											</g:Hyperlink>
+										</li>
+										<li class="services11">
+											<g:Hyperlink ui:field="siteTour">
+												<ui:msg key="siteTour">Site Tour</ui:msg>
+											</g:Hyperlink>
+										</li>
+										<li class="services12">
+											<g:Hyperlink ui:field="testimonials">
+												<ui:msg key="testimonials">Testimonials</ui:msg>
+											</g:Hyperlink>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="rightcol_index">
+		
+			<g:HTMLPanel ui:field="flashPanel"></g:HTMLPanel>
+			<div class="featured">
+				<table width="379" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td width="7" valign="top" height="24" align="left">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_left.gif" />
+							</td>
+							<td valign="top" align="left" class="bg_graybox">
+								<h1>
+									<ui:msg key="featuredDev">
+										Featured
+										<span>Developments</span>
+									</ui:msg>
+								</h1>
+							</td>
+							<td width="7" valign="top" height="24" align="right">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_right.gif" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<g:HTMLPanel ui:field="featuredListing">
+				</g:HTMLPanel>
+			</div>
+		</div>
+		<div class="clear" />
+	</g:HTMLPanel>
+</ui:UiBinder>

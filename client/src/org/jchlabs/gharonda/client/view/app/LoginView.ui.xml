@@ -1,0 +1,90 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<g:PopupPanel ui:field="loginDialog">
+		<g:HTMLPanel>
+			<div class="register_container">
+				<div id="tab_inner1">
+					<g:Anchor ui:field="login" styleName="select_tab2">
+						<span>
+							<ui:msg key="login">Login</ui:msg>
+						</span>
+					</g:Anchor>
+					<g:Anchor ui:field="register">
+						<span>
+							<ui:msg key="register">Register</ui:msg>
+						</span>
+					</g:Anchor>
+				</div>
+				<table width="549" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td width="7" valign="top" height="33" align="left">
+								<img width="11" height="33" border="0" alt=""
+									src="images/graybox_left1.gif" />
+							</td>
+							<td valign="top" align="left" class="bg_graybox1"> </td>
+							<td width="7" valign="top" height="33" align="right">
+								<img width="9" height="33" border="0" alt=""
+									src="images/graybox_right1.gif" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="register_inner">
+					<ol>
+						<li>
+							<label>
+								<ui:msg key="emailAddress">Email Address</ui:msg>
+								<span class="staric">*</span>
+							</label>
+							<g:TextBox ui:field="email" styleName="yellow_textfield" />
+						</li>
+						<li>
+							<label>
+								<ui:msg key="password">Password</ui:msg>
+								<span class="staric">*</span>
+							</label>
+							<g:PasswordTextBox ui:field="passwd" styleName="yellow_textfield" />
+						</li>
+						<li class="btn_li">
+							<g:Anchor ui:field="signMeIn">
+								<img border="0" align="left" alt="" src="images/btn_signin.gif" />
+							</g:Anchor>
+							<g:Anchor ui:field="close">
+								<img border="0" align="right" alt="" src="images/btn_cancel.gif" />
+							</g:Anchor>
+						</li>
+						<li class="clear" />
+						<li class="link_li">
+							<a class="blue_linkleft" href="#">
+								<ui:msg key="forgotPassword">Forgot Password ?</ui:msg>
+							</a>
+						</li>
+					</ol>
+					<img width="527" height="104" border="0" alt=""
+						src="images/img_register.jpg" />
+				</div>
+				<div id="register_footer">
+					<table width="100%" cellspacing="0" cellpadding="0" border="0">
+						<tbody>
+							<tr>
+								<td valign="top" align="left">
+									<span class="staric">*</span>
+									<ui:msg key="required">Required</ui:msg>
+								</td>
+								<td valign="top" align="right">
+									<g:Anchor ui:field="policy" styleName="blue_link">
+										<ui:msg key="policy">Learn about our Privacy Policy
+										</ui:msg>
+									</g:Anchor>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</g:HTMLPanel>
+	</g:PopupPanel>
+</ui:UiBinder>

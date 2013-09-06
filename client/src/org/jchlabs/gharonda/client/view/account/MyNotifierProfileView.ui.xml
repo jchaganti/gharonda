@@ -1,0 +1,174 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<ui:with type="com.Gharonda.client.NameTokens" field="nameTokens"></ui:with>
+	<g:HTMLPanel ui:field="contentPanel">
+		<div class="leftcol_aboutus">
+			<div class="myaccount">
+				<div id="tab_inner">
+					<g:Hyperlink ui:field="myProfile"
+						targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyProfilePage}">
+						<span>
+							<ui:msg key="myProfile">My Profile</ui:msg>
+						</span>
+					</g:Hyperlink>
+					<g:Hyperlink ui:field="myListings"
+						targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyListingsPage}">
+						<span>
+							<ui:msg key="myListings">My Listings</ui:msg>
+						</span>
+					</g:Hyperlink>
+					<g:Hyperlink ui:field="myFavorites"
+						targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyFavoritesPage}">
+						<span>
+							<ui:msg key="myFavorites">My Favorites</ui:msg>
+						</span>
+					</g:Hyperlink>
+					<g:Anchor ui:field="myNotifierProfile" styleName="select_tab1">
+						<span>
+							<ui:msg key="myNotifierProfile">My Notifier Profile</ui:msg>
+						</span>
+					</g:Anchor>
+				</div>
+				<div class="clear" />
+				<div>
+					<img width="753" height="8" src="images/top5.gif" />
+				</div>
+			</div>
+			<div class="clear" />
+			<div class="my_notifier_profile">
+				<h1>
+					<ui:msg key="descHeading">My Notifier Profile</ui:msg>
+				</h1>
+				<p>				
+						<ui:msg key="descText">Gharonda.com’s New
+							Property Notifier service will send you New Properties List to
+							your email based on your selected criterias. You can create or
+							edit your New Property Notifier Profile anytime you want.
+						</ui:msg>
+				</p>
+				<ol class="notifier_profile_form_a">
+					<li>
+						<g:TextBox ui:field="state" styleName="email_field" />
+						<g:HTMLPanel ui:field="statePanel">
+							<label>
+								<ui:msg key="state">State</ui:msg>
+							</label>
+						</g:HTMLPanel>
+					</li>
+					<li>
+						<g:TextBox ui:field="city" styleName="email_field" />
+						<g:HTMLPanel ui:field="cityPanel">
+							<label>
+								<ui:msg key="city">City</ui:msg>
+							</label>
+						</g:HTMLPanel>
+					</li>
+					<li>
+						<g:TextBox ui:field="suburb" styleName="email_field" />
+						<g:HTMLPanel ui:field="suburbPanel">
+							<label>
+								<ui:msg key="suburb">Suburb</ui:msg>
+							</label>
+						</g:HTMLPanel>
+					</li>
+					<li>
+						<label>
+							<ui:msg key="frequency">Frequency</ui:msg>
+						</label>
+						<g:ListBox ui:field="freqTypesList" />
+					</li>
+				</ol>
+				<span class="seperator1"></span>
+				<ol class="notifier_profile_form_b">
+					<li>
+						<label>
+							<ui:msg key="type">Type:</ui:msg>
+						</label>
+						<g:ListBox ui:field="pTypesList" />
+					</li>
+					<li>
+						<label>
+							<ui:msg key="sft">Sq Ft.:</ui:msg>
+						</label>
+						<g:TextBox ui:field="sftLVal" />
+						<g:ListBox ui:field="sftComparator" styleName="middle_field" />
+						<g:TextBox ui:field="sftRVal" />
+					</li>
+					<li>
+						<label>
+							<ui:msg key="price">Price:</ui:msg>
+						</label>
+						<g:TextBox ui:field="priceLVal" />
+						<g:ListBox ui:field="priceComparator" styleName="middle_field" />
+						<g:TextBox ui:field="priceRVal" />
+					</li>
+					<li>
+						<label>
+							<ui:msg key="room">Room Number:</ui:msg>
+						</label>
+						<g:TextBox ui:field="roomNoLVal" />
+						<g:ListBox ui:field="roomNoComparator" styleName="middle_field" />
+						<g:TextBox ui:field="roomNoRVal" />
+					</li>
+					<li class="options_field">
+						<label class="options">
+							<ui:msg key="options">Options</ui:msg>
+						</label>
+						<label class="options">
+							<ui:msg key="selectedOptions"> Selected Options</ui:msg>
+						</label>
+					</li>
+					<li>
+						<label>
+							<ui:msg key="amenities">Amenities:</ui:msg>
+						</label>
+						<g:ListBox ui:field="unSelAmenitiesList" multipleSelect="true"
+							height="80px" />
+						<g:Anchor ui:field="toLeft">
+							<input type="image" value="" src="images/button_left.gif" />
+						</g:Anchor>
+						<g:Anchor ui:field="toRight">
+							<input type="image" value="" src="images/button_right.gif" />
+						</g:Anchor>
+						<g:ListBox ui:field="selAmenitiesList" multipleSelect="true"
+							height="80px" />
+					</li>
+					<li>
+						<g:Anchor ui:field="createProfile">
+							<input type="image" value=""
+								src="images/create_notifier_profile.jpg" class="create_profile_btn" />
+						</g:Anchor>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="rightcol_aboutus">
+			<div class="featured1">
+				<table width="177" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td width="7" valign="top" height="24" align="left">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_left.gif" />
+							</td>
+							<td valign="top" align="left" class="bg_graybox">
+								<h1>
+									<ui:msg key="featured">Featured Listing</ui:msg>
+								</h1>
+							</td>
+							<td width="7" valign="top" height="24" align="right">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_right.gif" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<g:HTMLPanel ui:field="featuredListing">
+				</g:HTMLPanel>
+			</div>
+		</div>
+		<div class="clear" />
+	</g:HTMLPanel>
+</ui:UiBinder>

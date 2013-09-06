@@ -1,0 +1,136 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<g:HTMLPanel ui:field="contentPanel">
+		<div class="leftcol_aboutus">
+			<div>
+				<img src="images/comtenttop_aboutus.gif" alt="" width="753"
+					height="8" border="0" />
+			</div>
+			<div class="inner_content">
+				<div class="innerleft_contact">
+					<table width="100%" border="0" cellspacing="0" cellpadding="0">
+						<tr>
+							<td align="left" valign="top">
+								<div class="less_toppadding">
+									<h1>
+										<ui:msg key="customerServices">Customer Services</ui:msg>
+									</h1>
+									<span class="seperator1"></span>
+									<table width="100%" border="0" cellspacing="0"
+										cellpadding="0">
+										<tr>
+											<td align="left" valign="top">
+												<strong>
+													<ui:msg key="phone">Phone</ui:msg>
+													:
+												</strong>
+											</td>
+											<td align="left" valign="top">( 554 ) 802-4824</td>
+										</tr>
+										<br />
+										<tr>
+											<td width="39%" align="left" valign="top">
+												<strong>Email:</strong>
+											</td>
+											<td width="61%" align="left" valign="top">
+												<a href="mailto:info@Gharonda.com">info@Gharonda.com</a>
+												<br />
+												<a href="mailto:reklam@Gharonda.com">reklam@Gharonda.com</a>
+												<br />
+												<a href="mailto:kariyer@Gharonda.com">kariyer@Gharonda.com
+												</a>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td align="left" valign="top">
+								<div>
+									<h1>
+										<ui:msg key="address">Address</ui:msg>
+									</h1>
+									<span class="seperator1"></span>
+									<p>
+										<strong> Gharonda.com</strong>
+										<br />
+										Bulgurlu Mah. Bağcılar Cad. 
+										<br />
+										Gürpınar Sit. 2. Kısım B8 Blok D:4
+										<br />
+										Üsküdar İstanbul 34696  Türkiye
+									</p>
+								</div>
+							</td>
+						</tr>
+					</table>
+				</div>
+				<div class="innerright_contact">
+					<ol>
+						<li>
+							<label>
+								<ui:msg key="name">Name</ui:msg>
+								:
+							</label>
+							<input class="text_field5" type="text" value="" />
+						</li>
+						<li>
+							<label>Email:</label>
+							<input class="text_field5" type="text" value="" />
+						</li>
+						<li>
+							<label>
+								<ui:msg key="subject">Subject</ui:msg>
+								:
+							</label>
+							<input class="text_field5" type="text" value="" />
+						</li>
+						<li>
+							<label>
+								<ui:msg key="comments">Comments</ui:msg>
+								:
+							</label>
+							<textarea name="textarea" id="textarea" cols="45" rows="5"
+								class="text_field6"></textarea>
+						</li>
+						<li>
+							<g:Image ui:field="send" url="images/btn_send.gif"
+								styleName="btn_send" />
+						</li>
+						<li class="thanku_txt" style="display:none;" id="msg"></li>
+					</ol>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div class="rightcol_aboutus">
+			<div class="featured1">
+				<table width="177" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td width="7" valign="top" height="24" align="left">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_left.gif" />
+							</td>
+							<td valign="top" align="left" class="bg_graybox">
+								<h1>
+									<ui:msg key="featured">Featured Listing</ui:msg>
+								</h1>
+							</td>
+							<td width="7" valign="top" height="24" align="right">
+								<img width="7" height="24" border="0" alt=""
+									src="images/graybox_right.gif" />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<g:HTMLPanel ui:field="featuredListing">
+				</g:HTMLPanel>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</g:HTMLPanel>
+</ui:UiBinder>

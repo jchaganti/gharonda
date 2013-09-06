@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry exported="true" kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="D:/ps/3rdParty/client/gwt-incubator-20100204-r1747 (1).jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gwtp-0.4-SNAPSHOT.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gwt-ajaxloader.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gin-r137.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/log4j-1.2.15.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gwt-dnd-2.6.5.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gwt-dispatch-1.0.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gwt-servlet.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/guice-2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/guice-servlet-2.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gwt-presenter-1.1.0-replace-SNAPSHOT.jar"/>
+	<classpathentry combineaccessrules="false" exported="true" kind="src" path="/server"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gwt-log-2.6.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gwtupload-0.5.7.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gwt-maps.jar"/>
+	<classpathentry exported="true" kind="lib" path="D:/ps/3rdParty/client/gwt-search.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -1,0 +1,5 @@
+#Thu Feb 10 20:06:16 IST 2011
+war.name=Gharonda.war
+compiler.style=OBFUSCATED
+server.path=d\:\\ps
+compiler.memory.max=256m

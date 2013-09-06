@@ -1,0 +1,114 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+	xmlns:g='urn:import:com.google.gwt.user.client.ui' ui:generateFormat='com.google.gwt.i18n.rebind.format.PropertiesFormat'
+	ui:generateKeys="com.google.gwt.i18n.rebind.keygen.MD5KeyGenerator"
+	ui:generateLocales="default">
+	<ui:with type="com.Gharonda.client.NameTokens" field="nameTokens"></ui:with>
+	<g:HTMLPanel ui:field="contentPanel">
+		<div class="myaccount">
+			<div id="tab_inner">
+				<g:Hyperlink ui:field="myProfile"
+					targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyProfilePage}">
+					<span>
+						<ui:msg key="myProfile">My Profile</ui:msg>
+					</span>
+				</g:Hyperlink>
+				<g:Hyperlink ui:field="myListings"
+					targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyListingsPage}">
+					<span>
+						<ui:msg key="myListings">My Listings</ui:msg>
+					</span>
+				</g:Hyperlink>
+				<g:Anchor ui:field="myFavorites" styleName="select_tab1">
+					<span>
+						<ui:msg key="myFavorites">My Favorites</ui:msg>
+					</span>
+				</g:Anchor>
+				<g:Hyperlink ui:field="myNotifierProfile"
+					targetHistoryToken="{nameTokens.getHomePage}/{nameTokens.getMyNotifierProfilePage}">
+					<span>
+						<ui:msg key="myNotifierProfile">My Notifier Profile</ui:msg>
+					</span>
+				</g:Hyperlink>
+			</div>
+			<div class="clear" />
+			<div>
+				<img width="940" height="8" src="images/top5.gif" />
+			</div>
+			<div class="myaccount_inner">
+				<table width="100%" cellspacing="0" cellpadding="0" border="0">
+					<tbody>
+						<tr>
+							<td valign="top" align="left">
+								<div class="leftcol_aboutus">
+									<table width="100%" cellspacing="0" cellpadding="0"
+										border="0">
+										<tbody>
+											<tr>
+												<td valign="top" align="left" style="padding: 0px 0px 15px; float: left;">
+													<g:Image ui:field="compare" url="images/btn_compare.gif" /> 
+												</td>
+												<td valign="top" align="left" style="padding: 0px 10px 15px; float: left;">
+													<g:Image ui:field="removeFav" url="images/btn_removefromlist.gif" />
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table width="753" cellspacing="0" cellpadding="0"
+										border="0">
+										<tbody>
+											<tr>
+												<td width="7" valign="top" height="24" align="left">
+													<img width="7" height="24" border="0" alt=""
+														src="images/graybox_left.gif" />
+												</td>
+												<td width="729" valign="top" align="left" class="bg_graybox">
+													<h1>
+														<ui:msg key="favorites">Favorites</ui:msg>
+													</h1>
+												</td>
+												<td width="7" valign="top" height="24" align="right">
+													<img width="7" height="24" border="0" alt=""
+														src="images/graybox_right.gif" />
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<g:HTMLPanel ui:field="propertiesGridPanel"
+										styleName="innercontent_homeforsale">
+									</g:HTMLPanel>
+									<table width="100%" cellspacing="0" cellpadding="0"
+										border="0" style="margin-top:15px">
+										<tbody>
+											<tr>
+												<td valign="top" align="left" style="padding: 0px 10px 15px 0px; float: left;">
+													<g:Image ui:field="compareBtm" url="images/btn_compare.gif" /> 
+												</td>
+												<td valign="top" align="left" style="padding: 0px 0px 15px; float: left;">
+													<g:Image ui:field="removeFavBtm" url="images/btn_removefromlist.gif" />
+												</td>
+												<td valign="middle" align="right">
+													<g:HTMLPanel ui:field="paging">
+													</g:HTMLPanel>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+									<table width="100%" cellspacing="0" cellpadding="0"
+										border="0">
+										<tbody>
+											<tr>
+												<td valign="middle" height="40" align="left">
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="clear" />
+	</g:HTMLPanel>
+</ui:UiBinder>

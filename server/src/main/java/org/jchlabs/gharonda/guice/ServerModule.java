@@ -1,0 +1,101 @@
+package org.jchlabs.gharonda.guice;
+
+import org.apache.commons.logging.Log;
+import org.jchlabs.gharonda.domain.pom.dao._RootDAO;
+import org.jchlabs.gharonda.domain.pom.dao.iface.ContentholderDAO;
+import org.jchlabs.gharonda.domain.pom.dao.iface.ContentitemsDAO;
+import org.jchlabs.gharonda.domain.pom.dao.iface.EmailfrequenciesDAO;
+import org.jchlabs.gharonda.domain.pom.dao.iface.FavoritesDAO;
+import org.jchlabs.gharonda.domain.pom.dao.iface.NeightbourhoodDAO;
+import org.jchlabs.gharonda.domain.pom.dao.iface.NotifierprofilesDAO;
+import org.jchlabs.gharonda.domain.pom.dao.iface.PropertiesDAO;
+import org.jchlabs.gharonda.domain.pom.dao.iface.ServiceproviderdetailsDAO;
+import org.jchlabs.gharonda.domain.pom.dao.iface.UsersDAO;
+import org.jchlabs.gharonda.handlers.AddFavoriteHandler;
+import org.jchlabs.gharonda.handlers.CancelPropertyHandler;
+import org.jchlabs.gharonda.handlers.CheckSessionHandler;
+import org.jchlabs.gharonda.handlers.ComparePropertiesHandler;
+import org.jchlabs.gharonda.handlers.CreatePropertyHandler;
+import org.jchlabs.gharonda.handlers.DeleteImageHandler;
+import org.jchlabs.gharonda.handlers.DeletePropertyHandler;
+import org.jchlabs.gharonda.handlers.GetFeaturePropertiesHandler;
+import org.jchlabs.gharonda.handlers.GetImageDataHandler;
+import org.jchlabs.gharonda.handlers.GetJustListedAndBargainPropertiesHandler;
+import org.jchlabs.gharonda.handlers.GetNeighbourhoodDataHandler;
+import org.jchlabs.gharonda.handlers.GetPropertyHandler;
+import org.jchlabs.gharonda.handlers.GetSearchPropertiesHandler;
+import org.jchlabs.gharonda.handlers.GetUserFavoritesHandler;
+import org.jchlabs.gharonda.handlers.GetUserPropertiesHandler;
+import org.jchlabs.gharonda.handlers.LoginUserHandler;
+import org.jchlabs.gharonda.handlers.LogoutUserHandler;
+import org.jchlabs.gharonda.handlers.ModifyPropertyHandler;
+import org.jchlabs.gharonda.handlers.ModifyUserHandler;
+import org.jchlabs.gharonda.handlers.RegisterUserHandler;
+import org.jchlabs.gharonda.handlers.RemoveFavoriteHandler;
+import org.jchlabs.gharonda.handlers.SavePropertyHandler;
+import org.jchlabs.gharonda.shared.rpc.AddFavorite;
+import org.jchlabs.gharonda.shared.rpc.CancelProperty;
+import org.jchlabs.gharonda.shared.rpc.CheckSession;
+import org.jchlabs.gharonda.shared.rpc.CompareProperties;
+import org.jchlabs.gharonda.shared.rpc.CreateProperty;
+import org.jchlabs.gharonda.shared.rpc.DeleteImage;
+import org.jchlabs.gharonda.shared.rpc.DeleteProperty;
+import org.jchlabs.gharonda.shared.rpc.GetFeaturedProperties;
+import org.jchlabs.gharonda.shared.rpc.GetImageData;
+import org.jchlabs.gharonda.shared.rpc.GetJustListedAndBargainProperties;
+import org.jchlabs.gharonda.shared.rpc.GetNeighbourhoodData;
+import org.jchlabs.gharonda.shared.rpc.GetProperty;
+import org.jchlabs.gharonda.shared.rpc.GetSearchProperties;
+import org.jchlabs.gharonda.shared.rpc.GetUserFavorites;
+import org.jchlabs.gharonda.shared.rpc.GetUserProperties;
+import org.jchlabs.gharonda.shared.rpc.LoginUser;
+import org.jchlabs.gharonda.shared.rpc.LogoutUser;
+import org.jchlabs.gharonda.shared.rpc.ModifyProperty;
+import org.jchlabs.gharonda.shared.rpc.ModifyUser;
+import org.jchlabs.gharonda.shared.rpc.RegisterUser;
+import org.jchlabs.gharonda.shared.rpc.RemoveFavorite;
+import org.jchlabs.gharonda.shared.rpc.SaveProperty;
+
+import com.google.inject.Singleton;
+import com.gwtplatform.dispatch.server.guice.HandlerModule;
+
+public class ServerModule extends HandlerModule {
+
+	@Override
+	protected void configureHandlers() {
+		_RootDAO.initialize();
+		bindHandler(CheckSession.class, CheckSessionHandler.class);
+		bindHandler(LoginUser.class, LoginUserHandler.class);
+		bindHandler(LogoutUser.class, LogoutUserHandler.class);
+		bindHandler(RegisterUser.class, RegisterUserHandler.class);
+		bindHandler(CreateProperty.class, CreatePropertyHandler.class);
+		bindHandler(SaveProperty.class, SavePropertyHandler.class);
+		bindHandler(DeleteImage.class, DeleteImageHandler.class);
+		bindHandler(CancelProperty.class, CancelPropertyHandler.class);
+		bindHandler(GetUserProperties.class, GetUserPropertiesHandler.class);
+		bindHandler(GetProperty.class, GetPropertyHandler.class);
+		bindHandler(ModifyProperty.class, ModifyPropertyHandler.class);
+		bindHandler(GetImageData.class, GetImageDataHandler.class);
+		bindHandler(GetSearchProperties.class, GetSearchPropertiesHandler.class);
+		bindHandler(AddFavorite.class, AddFavoriteHandler.class);
+		bindHandler(GetUserFavorites.class, GetUserFavoritesHandler.class);
+		bindHandler(ModifyUser.class, ModifyUserHandler.class);
+		bindHandler(GetNeighbourhoodData.class, GetNeighbourhoodDataHandler.class);
+		bindHandler(CompareProperties.class, ComparePropertiesHandler.class);
+		bindHandler(GetFeaturedProperties.class, GetFeaturePropertiesHandler.class);
+		bindHandler(DeleteProperty.class, DeletePropertyHandler.class);
+		bindHandler(GetJustListedAndBargainProperties.class, GetJustListedAndBargainPropertiesHandler.class);
+		bindHandler(RemoveFavorite.class, RemoveFavoriteHandler.class);
+		bind(Log.class).toProvider(LogProvider.class).in(Singleton.class);
+		// bind(Logger.class).toProvider(Slf4jLogProvider.class).in(Singleton.class);
+		bind(UsersDAO.class).toProvider(UsersDAOProvider.class).in(Singleton.class);
+		bind(ServiceproviderdetailsDAO.class).toProvider(ServiceproviderdetailsDAOProvider.class).in(Singleton.class);
+		bind(ContentholderDAO.class).toProvider(ContentholderDAOProvider.class).in(Singleton.class);
+		bind(ContentitemsDAO.class).toProvider(ContentitemsDAOProvider.class).in(Singleton.class);
+		bind(FavoritesDAO.class).toProvider(FavoritesDAOProvider.class).in(Singleton.class);
+		bind(NeightbourhoodDAO.class).toProvider(NeighbourhoodDAOProvider.class).in(Singleton.class);
+		bind(NotifierprofilesDAO.class).toProvider(NotifierprofilesDAOProvider.class).in(Singleton.class);
+		bind(EmailfrequenciesDAO.class).toProvider(EmailfrequenciesDAOProvider.class).in(Singleton.class);
+		bind(PropertiesDAO.class).toProvider(PropertiesDAOProvider.class).in(Singleton.class);
+	}
+}
